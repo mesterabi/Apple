@@ -1,0 +1,26 @@
+{
+  "name": "apple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "live": "live-server",
+    "scss": "node-sass -w ./scss/ -o ./css/ -r",
+    "start": "npm-run-all --parallel live scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesterabi/Apple.git"
+  },
+  "author": "m.esterabi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mesterabi/Apple/issues"
+  },
+  "homepage": "https://github.com/mesterabi/Apple#readme",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
