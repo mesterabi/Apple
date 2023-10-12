@@ -1,3 +1,6 @@
-@import "./variables";
+// variables, functions, modules
+@import "./variables", "./mixinFunctions", "./mixinModules";
+// settings
 @import "./setting";
-@import "./header";
+// hesder, wrapper, footer
+@import "./wrapper", "./header";
