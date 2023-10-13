@@ -1,3 +1,11 @@
+// media query
+$media:(
+    "xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px,
+);
+
 // nav colors
 $nav-fontcolor: #ffffffcc;
 $nav-hfontcolor: #ffffff;
@@ -9,3 +17,4 @@ $nav-h2fontcolor: rgb(110, 110, 115);
 $fontcolor-light: #f5f5f7;
 $fontcolor-dark: #1d1d1f;
 $fontcolor-links: #2997ff;
+

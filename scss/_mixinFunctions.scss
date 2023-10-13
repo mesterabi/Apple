@@ -52,27 +52,27 @@
   }
 }
 @mixin menu-items {
-    > li {
-        @include dimension(auto, inherit);
-        @include submenu-visible;
-        > a {
-          @include dimension(auto, inherit);
-          @include flex-row;
-          align-items: center;
-          text-decoration: none;
-          :hover {
-            color: $nav-hfontcolor;
-          }
-          > span {
-            font-size: 12px;
-            font-weight: 400;
-            color: $nav-fontcolor;
-            > i {
-              font-size: 14px;
-            }
-          }
+  > li {
+    @include dimension(auto, inherit);
+    @include submenu-visible;
+    > a {
+      @include dimension(auto, inherit);
+      @include flex-row;
+      align-items: center;
+      text-decoration: none;
+      :hover {
+        color: $nav-hfontcolor;
+      }
+      > span {
+        font-size: 12px;
+        font-weight: 400;
+        color: $nav-fontcolor;
+        > i {
+          font-size: 14px;
         }
       }
+    }
+  }
 }
 @mixin submenu-titles {
   max-width: 50%;

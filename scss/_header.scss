@@ -1,4 +1,22 @@
 body {
-@include headerModule;
-@include submenuModule;
+  @include xl {
+    @include headerModule;
+    @include submenuModule;
+  }
+  @include lg {
+    @include headerModule;
+    @include submenuModule;
+  }
+  @include md {
+    @include headerModule;
+    @include submenuModule;
+  }
+  @include sm {
+    @include headerModule;
+    @include submenuModule;
+  }
+  @include xs {
+    @include headerModule;
+    @include submenuModule;
+  }
 }
