@@ -1,0 +1,135 @@
+// global functions
+@mixin dimension($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin center {
+  margin: 0 auto;
+}
+@mixin flex-row($gap: 0px) {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: $gap;
+}
+// header functions
+@mixin nav-background {
+  width: 100%;
+  height: 44px;
+  background-color: black;
+  position: absolute;
+}
+@mixin nav-position {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+@mixin nav-hover {
+  transition: 300ms;
+  background-color: $nav-bgcolor;
+  backdrop-filter: saturate(180%) blur(20px);
+  &:hover {
+    background-color: $nav-hbgcolor;
+  }
+}
+@mixin submenu-position {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  overflow: auto;
+}
+@mixin submenu-hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+@mixin submenu-visible {
+  transition: 3s ease-in-out;
+  &:hover > div.submenu-container {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+  }
+}
+@mixin menu-items {
+    > li {
+        @include dimension(auto, inherit);
+        @include submenu-visible;
+        > a {
+          @include dimension(auto, inherit);
+          @include flex-row;
+          align-items: center;
+          text-decoration: none;
+          :hover {
+            color: $nav-hfontcolor;
+          }
+          > span {
+            font-size: 12px;
+            font-weight: 400;
+            color: $nav-fontcolor;
+            > i {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+}
+@mixin submenu-titles {
+  max-width: 50%;
+  padding-right: 68px;
+  > ul {
+    list-style: none;
+    > li {
+      margin-inline-start: -11px;
+      margin-inline-end: -11px;
+      > a {
+        display: inline-block;
+        text-decoration: none;
+        color: $nav-fontcolor;
+        font-size: 24px;
+        line-height: 1.1666666667;
+        font-weight: 600;
+        letter-spacing: 0.009em;
+        padding: 7px 11px;
+        padding-top: 9px;
+      }
+    }
+    > li:first-of-type {
+      margin-top: 6px;
+    }
+  }
+  a.subtitle {
+    font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+}
+@mixin submenu-items {
+  max-width: 25%;
+  height: auto;
+  padding-right: 44px;
+  > ul {
+    list-style: none;
+    > li {
+      margin-inline-start: -11px;
+      margin-inline-end: -11px;
+      > a,
+      a.subtitle {
+        display: inline-block;
+        text-decoration: none;
+        color: $nav-fontcolor;
+        font-size: 12px;
+        line-height: 1.3333733333;
+        font-weight: 500;
+        letter-spacing: -0.01em;
+        padding: 7px 11px;
+      }
+    }
+    > li:first-of-type {
+      margin-top: 10px;
+    }
+  }
+}
+
+// wrapper functions

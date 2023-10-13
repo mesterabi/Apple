@@ -1,0 +1,66 @@
+// header modules
+@mixin headerModule {
+  > div.black-bg {
+    @include nav-background;
+  }
+  > header {
+    @include dimension(100%, 44px);
+    @include nav-position;
+    @include nav-hover;
+
+    > nav {
+      @include dimension(65%, inherit);
+      @include center;
+      > ul {
+        @include dimension(100%, inherit);
+        @include flex-row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        @include menu-items;
+      }
+    }
+  }
+}
+
+@mixin submenuModule {
+  > header {
+    > nav {
+      > ul {
+        > li {
+          > div.submenu-container {
+            @include dimension(100%, auto);
+            @include flex-row;
+            justify-content: center;
+            background-color: $nav-hbgcolor;
+            @include submenu-position;
+            @include submenu-hide;
+            > div.submenu-content {
+              @include dimension(100%, auto);
+              max-width: 1024px;
+              max-height: calc(100vh - 88px);
+              @include flex-row;
+              justify-content: flex-start;
+              padding: 40px 22px;
+              padding-bottom: 84px;
+
+              h2 {
+                color: $nav-h2fontcolor;
+                font-size: 12px;
+                font-weight: lighter;
+              }
+              > div.titles-col {
+                @include submenu-titles;
+              }
+              > div.items-col {
+                @include submenu-items;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// wrapper modules
