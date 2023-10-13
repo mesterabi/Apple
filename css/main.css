@@ -5,30 +5,38 @@
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif, Impact, system-ui, -apple-system, sans-serif; }
 
+.blackfont {
+  color: #1d1d1f; }
+
+.whitefont {
+  color: #f5f5f7; }
+
 body > main {
-  width: 100%; }
-  body > main > section {
+  width: 100%;
+  height: auto; }
+  body > main > section.products-1col {
     width: 100%;
     height: 580px; }
-    body > main > section > div.container {
+    body > main > section.products-1col > div.container {
       width: inherit;
       height: inherit;
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: row nowrap;
+      gap: 0px;
       justify-content: center;
       cursor: pointer; }
-      body > main > section > div.container > a {
-        display: block;
+      body > main > section.products-1col > div.container > a {
         width: inherit;
-        height: inherit; }
-        body > main > section > div.container > a > img {
+        height: inherit;
+        display: block; }
+        body > main > section.products-1col > div.container > a > img {
           width: inherit;
           height: inherit;
           object-fit: cover;
           object-position: center; }
-      body > main > section > div.container div.titles {
+      body > main > section.products-1col > div.container div.titles {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
         gap: 10px;
         align-content: center;
         align-items: center;
@@ -37,26 +45,27 @@ body > main {
         overflow: hidden;
         padding-top: 47px;
         margin-top: 44px; }
-        body > main > section > div.container div.titles > h2 {
+        body > main > section.products-1col > div.container div.titles > h2 {
           font-size: 50px;
           color: #f5f5f7; }
-        body > main > section > div.container div.titles > h3 {
+        body > main > section.products-1col > div.container div.titles > h3 {
           font-size: 25px;
           color: #f5f5f7;
           font-weight: lighter; }
-        body > main > section > div.container div.titles > div.links {
+        body > main > section.products-1col > div.container div.titles > div.links {
           width: 100%;
+          height: auto;
           display: flex;
-          flex-flow: row wrap;
-          justify-content: center;
-          gap: 10px; }
-          body > main > section > div.container div.titles > div.links > a {
+          flex-flow: row nowrap;
+          gap: 50px;
+          justify-content: center; }
+          body > main > section.products-1col > div.container div.titles > div.links > a {
             text-decoration: none;
             color: #2997ff;
             font-size: 21px; }
-            body > main > section > div.container div.titles > div.links > a:hover {
+            body > main > section.products-1col > div.container div.titles > div.links > a:hover {
               text-decoration: underline; }
-            body > main > section > div.container div.titles > div.links > a::after {
+            body > main > section.products-1col > div.container div.titles > div.links > a::after {
               content: "  \203A";
               font-weight: 700; }
 

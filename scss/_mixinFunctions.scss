@@ -11,6 +11,11 @@
   flex-flow: row nowrap;
   gap: $gap;
 }
+@mixin flex-col($gap: 0px) {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: $gap;
+}
 // header functions
 @mixin nav-background {
   width: 100%;
@@ -133,3 +138,39 @@
 }
 
 // wrapper functions
+@mixin product-titles {
+    @include flex-col(10px);
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    padding-top: 47px;
+    margin-top: 44px;
+    > h2 {
+      font-size: 50px;
+      color: $fontcolor-light;
+    }
+    > h3 {
+      font-size: 25px;
+      color: $fontcolor-light;
+      font-weight: lighter;
+    }
+}
+@mixin product-links {
+    @include dimension(100%, auto);
+    @include flex-row(50px);
+    justify-content: center;
+    > a {
+      text-decoration: none;
+      color: $fontcolor-links;
+      font-size: 21px;
+      &:hover {
+        text-decoration: underline;
+      }
+      &::after {
+        content: "  \203A";
+        font-weight: 700;
+      }
+    }
+}

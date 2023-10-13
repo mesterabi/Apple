@@ -64,3 +64,32 @@
 }
 
 // wrapper modules
+@mixin productsSectionModule {
+    > main {
+        @include dimension(100%, auto);
+        > section.products-1col {
+          @include dimension(100%, 580px);
+          > div.container {
+            @include dimension(inherit, inherit);
+            @include flex-row;
+            justify-content: center;
+            cursor: pointer;
+            > a {
+              @include dimension(inherit, inherit);
+              display: block;
+              > img {
+                @include dimension(inherit, inherit);
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+            div.titles {
+              @include product-titles;
+              > div.links {
+                @include product-links;
+              }
+            }
+          }
+        }
+      }
+}
