@@ -125,3 +125,96 @@
     }
   }
 }
+
+// footer modules
+@mixin footerModule {
+  background-color: $footer-bgcolor;
+  @include flex-row;
+  justify-content: center;
+  > div.footer-container {
+    @include dimension(67vw, inherit);
+    @include padding(0,22px,0,22px);
+    > section.description {
+      > ul {
+        @include dimension(100%, 360px);
+        @include padding(17px,0,11px);
+        list-style: none;
+        @include border-bottom;
+        > li {
+          @include footer-textformat;
+          @include padding(0,0,10px);
+          > a {
+            font-size: 12px;
+            color: $footer-linkcolor;
+          }
+        }
+      }
+    }
+    > nav {
+      @include flex-row;
+      > section.directory-col {
+        @include padding(20px);
+        @include dimension(20%, 100%);
+        > div.directory {
+          > h3 {
+            color: $footer-dirtitlecolor;
+            font-size: 12px;
+            @include margin(0,0,10px);
+            @include dimension(auto,16px);
+          }
+          > ul {
+            @include margin(0,20px);
+            list-style: none;
+            > li {
+              @include margin(0,0,10px);
+              @include dimension(auto,16px);
+              @include footer-linkformat;
+            }
+          }
+        }
+      }
+    }
+    > section.copyright {
+      @include padding(34px, 0, 21px);
+      > div.shop-ways {
+        @include margin(0, 0, 7px);
+        @include padding(0, 0, 8px);
+        @include dimension(auto, 25px);
+        font-size: 12px;
+        color: $footer-fontcolor;
+        @include border-bottom;
+        > a {
+          color: $fontcolor-links;
+          font-size: 12px;
+        }
+      }
+      > div.rights {
+        @include flex-row;
+        align-items: baseline;
+        > p {
+          display: inline-block;
+          @include margin(5px, 30px);
+          font-size: 12px;
+          color: $footer-fontcolor;
+        }
+        > ul {
+          @include flex-row;
+          list-style: none;
+          > li {
+            @include footer-linkformat;
+            @include margin(5px, 7px);
+            > a {
+              @include padding(0, 10px);
+              @include border-right($footer-linkcolor);
+            }
+          }
+        }
+        div.location {
+          @include footer-linkformat;
+          position: relative;
+          right: -220px;
+        }
+      }
+    }
+  }
+}
