@@ -3,14 +3,33 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif, Impact, system-ui, -apple-system,
-    sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   // letter-spacing: 0.02px;
 }
 
+// global classes
 .blackfont {
-  color: $fontcolor-dark
+  color: $fontcolor-dark !important;
 }
 .whitefont {
-  color: $fontcolor-light
+  color: $fontcolor-light !important;
+}
+.Products-titlebottom {
+  top: 320px !important;
+}
+.apple-icon-size {
+  font-size: 35px;
+}
+
+// global padding
+@include xl {
+  @for $i from 1 through 10 {
+    .pad-xl-#{$i*2} {
+      padding: 0 #{$i * 2px};
+    }
+  }
+}
+
+.pad-top-24 {
+  padding-top: 24px;
 }

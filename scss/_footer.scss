@@ -1,0 +1,67 @@
+body {
+  > footer {
+    @include dimension(100%, 935px);
+    background-color: $footer-bgcolor;
+    @include flex-row;
+    justify-content: center;
+    > div.footer-container {
+      @include dimension(67vw, inherit);
+      padding: 0 22px;
+      > section.description {
+        > ul {
+          @include dimension(100%, 360px);
+          padding-top: 17px;
+          padding-bottom: 11px;
+          list-style: none;
+          border-bottom: solid 0.8px $footer-bordercolor;
+          > li {
+            font-size: 12px;
+            color: $footer-fontcolor;
+            line-height: 1.5;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            padding-bottom: 10px;
+            > a {
+              font-size: 12px;
+              color: $footer-linkcolor;
+            }
+          }
+        }
+      }
+      > nav {
+        @include dimension(100%, 460px);
+        @include flex-row;
+        > section.directory-col {
+          padding-top: 20px;
+          @include dimension(20%, 100%);
+          > div.directory {
+            > h3 {
+              color: $footer-dirtitlecolor;
+              font-size: 12px;
+              margin-bottom: 10px;
+              height: 16px;
+            }
+            > ul {
+              margin-right: 20px;
+              list-style: none;
+              > li {
+                margin-bottom: 10px;
+                height: 16px;
+                > a {
+                  display: block;
+                  height: inherit;
+                  color: $footer-linkcolor;
+                  font-size: 12px;
+                  text-decoration: none;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
