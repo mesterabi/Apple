@@ -64,32 +64,64 @@
 }
 
 // wrapper modules
-@mixin productsSectionModule {
-    > main {
-        @include dimension(100%, auto);
-        > section.products-1col {
-          @include dimension(100%, 580px);
-          > div.container {
-            @include dimension(inherit, inherit);
-            @include flex-row;
-            justify-content: center;
-            cursor: pointer;
-            > a {
-              @include dimension(inherit, inherit);
-              display: block;
-              > img {
-                @include dimension(inherit, inherit);
-                object-fit: cover;
-                object-position: center;
-              }
-            }
-            div.titles {
-              @include product-titles;
-              > div.links {
-                @include product-links;
-              }
-            }
-          }
-        }
+@mixin productsSectionModule($font:25px) {
+  @include dimension(100%, 580px);
+  margin-bottom: 12px;
+  > div.container {
+    @include dimension(inherit, inherit);
+    @include flex-row;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    > a {
+      @include dimension(inherit, inherit);
+      display: block;
+      > img {
+        @include dimension(inherit, inherit);
+        object-fit: cover;
+        object-position: center;
       }
+    }
+    div.titles {
+      @include product-titles($font);
+      > span {
+        color: #ab1213;
+        font-weight: 600;
+        margin-top: -5px;
+      }
+      > div.links {
+        @include product-links($font);
+      }
+    }
+  }
+}
+
+// swiper module
+@mixin swiperModule {
+  @include dimension(100%, 705px);
+  .mySwiper {
+    @include dimension(100%, 100%);
+  }
+  .swiper-wrapper {
+    @include dimension(100%, 650px);
+    @include flex-row;
+  }
+  .swiper-slide {
+    @include dimension(80vw, 670px);
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    @include flex-row;
+    justify-content: center;
+    align-items: flex-start;
+    > a {
+      display: block;
+      @include dimension(100%, 100%);
+      > img {
+        display: block;
+        @include dimension(100%, 100%);
+        object-fit: cover;
+      }
+    }
+  }
 }

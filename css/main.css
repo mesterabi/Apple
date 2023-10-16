@@ -3,20 +3,52 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif, Impact, system-ui, -apple-system, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 .blackfont {
-  color: #1d1d1f; }
+  color: #1d1d1f !important; }
 
 .whitefont {
-  color: #f5f5f7; }
+  color: #f5f5f7 !important; }
+
+.Products-titlebottom {
+  top: 320px !important; }
+
+.apple-icon-size {
+  font-size: 35px; }
+
+@media screen and (min-width: 1200px) {
+  .pad-xl-2 {
+    padding: 0 2px; }
+  .pad-xl-4 {
+    padding: 0 4px; }
+  .pad-xl-6 {
+    padding: 0 6px; }
+  .pad-xl-8 {
+    padding: 0 8px; }
+  .pad-xl-10 {
+    padding: 0 10px; }
+  .pad-xl-12 {
+    padding: 0 12px; }
+  .pad-xl-14 {
+    padding: 0 14px; }
+  .pad-xl-16 {
+    padding: 0 16px; }
+  .pad-xl-18 {
+    padding: 0 18px; }
+  .pad-xl-20 {
+    padding: 0 20px; } }
+
+.pad-top-24 {
+  padding-top: 24px; }
 
 body > main {
   width: 100%;
   height: auto; }
   body > main > section.products-1col {
     width: 100%;
-    height: 580px; }
+    height: 580px;
+    margin-bottom: 12px; }
     body > main > section.products-1col > div.container {
       width: inherit;
       height: inherit;
@@ -24,6 +56,7 @@ body > main {
       flex-flow: row nowrap;
       gap: 0px;
       justify-content: center;
+      position: relative;
       cursor: pointer; }
       body > main > section.products-1col > div.container > a {
         width: inherit;
@@ -43,15 +76,35 @@ body > main {
         position: absolute;
         top: 0;
         overflow: hidden;
-        padding-top: 47px;
-        margin-top: 44px; }
+        padding-top: 47px; }
         body > main > section.products-1col > div.container div.titles > h2 {
           font-size: 50px;
-          color: #f5f5f7; }
+          color: #f5f5f7;
+          text-align: center; }
+          body > main > section.products-1col > div.container div.titles > h2 i {
+            vertical-align: baseline; }
         body > main > section.products-1col > div.container div.titles > h3 {
           font-size: 25px;
           color: #f5f5f7;
-          font-weight: lighter; }
+          font-weight: lighter;
+          text-align: center;
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 5px;
+          align-items: center; }
+          body > main > section.products-1col > div.container div.titles > h3 > sup {
+            position: relative;
+            vertical-align: baseline;
+            font-size: 12px;
+            bottom: -8px;
+            left: -5px; }
+        body > main > section.products-1col > div.container div.titles > p {
+          font-size: 17px;
+          color: #6e6e73; }
+        body > main > section.products-1col > div.container div.titles > span {
+          color: #ab1213;
+          font-weight: 600;
+          margin-top: -5px; }
         body > main > section.products-1col > div.container div.titles > div.links {
           width: 100%;
           height: auto;
@@ -62,12 +115,123 @@ body > main {
           body > main > section.products-1col > div.container div.titles > div.links > a {
             text-decoration: none;
             color: #2997ff;
-            font-size: 21px; }
+            font-size: 22.5px; }
             body > main > section.products-1col > div.container div.titles > div.links > a:hover {
               text-decoration: underline; }
             body > main > section.products-1col > div.container div.titles > div.links > a::after {
               content: "  \203A";
               font-weight: 700; }
+  body > main > section.products-2col {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0px;
+    width: 100%;
+    height: 580px;
+    margin-bottom: 12px; }
+    body > main > section.products-2col > div.container {
+      width: inherit;
+      height: inherit;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 0px;
+      justify-content: center;
+      position: relative;
+      cursor: pointer; }
+      body > main > section.products-2col > div.container > a {
+        width: inherit;
+        height: inherit;
+        display: block; }
+        body > main > section.products-2col > div.container > a > img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+          object-position: center; }
+      body > main > section.products-2col > div.container div.titles {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px;
+        align-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        padding-top: 47px; }
+        body > main > section.products-2col > div.container div.titles > h2 {
+          font-size: 40px;
+          color: #f5f5f7;
+          text-align: center; }
+          body > main > section.products-2col > div.container div.titles > h2 i {
+            vertical-align: baseline; }
+        body > main > section.products-2col > div.container div.titles > h3 {
+          font-size: 20px;
+          color: #f5f5f7;
+          font-weight: lighter;
+          text-align: center;
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 5px;
+          align-items: center; }
+          body > main > section.products-2col > div.container div.titles > h3 > sup {
+            position: relative;
+            vertical-align: baseline;
+            font-size: 12px;
+            bottom: -8px;
+            left: -5px; }
+        body > main > section.products-2col > div.container div.titles > p {
+          font-size: 17px;
+          color: #6e6e73; }
+        body > main > section.products-2col > div.container div.titles > span {
+          color: #ab1213;
+          font-weight: 600;
+          margin-top: -5px; }
+        body > main > section.products-2col > div.container div.titles > div.links {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 50px;
+          justify-content: center; }
+          body > main > section.products-2col > div.container div.titles > div.links > a {
+            text-decoration: none;
+            color: #2997ff;
+            font-size: 18px; }
+            body > main > section.products-2col > div.container div.titles > div.links > a:hover {
+              text-decoration: underline; }
+            body > main > section.products-2col > div.container div.titles > div.links > a::after {
+              content: "  \203A";
+              font-weight: 700; }
+  body > main > section.swiper {
+    width: 100%;
+    height: 705px; }
+    body > main > section.swiper .mySwiper {
+      width: 100%;
+      height: 100%; }
+    body > main > section.swiper .swiper-wrapper {
+      width: 100%;
+      height: 650px;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 0px; }
+    body > main > section.swiper .swiper-slide {
+      width: 80vw;
+      height: 670px;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 0px;
+      justify-content: center;
+      align-items: flex-start; }
+      body > main > section.swiper .swiper-slide > a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        body > main > section.swiper .swiper-slide > a > img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
 
 @media screen and (min-width: 1200px) {
   body > div.black-bg {
@@ -728,3 +892,62 @@ body > main {
               padding: 7px 11px; }
           body > header > nav > ul > li > div.submenu-container > div.submenu-content > div.items-col > ul > li:first-of-type {
             margin-top: 10px; } }
+
+body > footer {
+  width: 100%;
+  height: 935px;
+  background-color: #f5f5f7;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0px;
+  justify-content: center; }
+  body > footer > div.footer-container {
+    width: 67vw;
+    height: inherit;
+    padding: 0 22px; }
+    body > footer > div.footer-container > section.description > ul {
+      width: 100%;
+      height: 360px;
+      padding-top: 17px;
+      padding-bottom: 11px;
+      list-style: none;
+      border-bottom: solid 0.8px #d2d2d7; }
+      body > footer > div.footer-container > section.description > ul > li {
+        font-size: 12px;
+        color: #6e6e73;
+        line-height: 1.5;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        padding-bottom: 10px; }
+        body > footer > div.footer-container > section.description > ul > li > a {
+          font-size: 12px;
+          color: #424245; }
+    body > footer > div.footer-container > nav {
+      width: 100%;
+      height: 460px;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 0px; }
+      body > footer > div.footer-container > nav > section.directory-col {
+        padding-top: 20px;
+        width: 20%;
+        height: 100%; }
+        body > footer > div.footer-container > nav > section.directory-col > div.directory > h3 {
+          color: #3c3c3c;
+          font-size: 12px;
+          margin-bottom: 10px;
+          height: 16px; }
+        body > footer > div.footer-container > nav > section.directory-col > div.directory > ul {
+          margin-right: 20px;
+          list-style: none; }
+          body > footer > div.footer-container > nav > section.directory-col > div.directory > ul > li {
+            margin-bottom: 10px;
+            height: 16px; }
+            body > footer > div.footer-container > nav > section.directory-col > div.directory > ul > li > a {
+              display: block;
+              height: inherit;
+              color: #424245;
+              font-size: 12px;
+              text-decoration: none; }
+              body > footer > div.footer-container > nav > section.directory-col > div.directory > ul > li > a:hover {
+                text-decoration: underline; }
