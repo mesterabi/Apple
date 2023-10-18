@@ -4,10 +4,10 @@ var swiper = new Swiper(".mySwiper", {
   loop: 9,
   slidesToShow: 3,
   slidesPerView: 1.2,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   autoplayHoverPause: true,
   pagination: {
     el: ".swiper-pagination",
