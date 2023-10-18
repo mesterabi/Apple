@@ -1,15 +1,72 @@
 body {
   > main {
-    @include dimension(100%, auto);
-    > section.products-1col {
-      @include productsSectionModule;
+    @include xl {
+      @include dimension(100%, auto);
+      > section.products-1col {
+        @include productsSectionModule;
+      }
+      > section.products-2col {
+        @include flex-row;
+        @include productsSectionModule(20px);
+      }
+      > section.swiper {
+        @include swiperModule;
+      }
     }
-    > section.products-2col {
-      @include flex-row;
-      @include productsSectionModule(20px);
+    @include lg {
+      @include dimension(100%, auto);
+      > section.products-1col {
+        @include productsSectionModule;
+      }
+      > section.products-2col {
+        @include flex-row;
+        @include productsSectionModule(20px);
+      }
+      > section.swiper {
+        @include swiperModule;
+      }
     }
-    > section.swiper {
-      @include swiperModule;
+
+    @include md {
+      @include dimension(100%, auto);
+      > section.products-1col {
+        @include productsSectionModule;
+      }
+      > section.products-2col {
+        @include flex-row;
+        @include productsSectionModule(20px);
+      }
+      > section.swiper {
+        @include swiperModule;
+      }
+    }
+
+    @include sm {
+      @include dimension(100%, auto);
+      > section.products-1col {
+        @include productsSectionModule;
+      }
+      > section.products-2col {
+        @include flex-row;
+        @include productsSectionModule(20px);
+      }
+      > section.swiper {
+        @include swiperModule;
+      }
+    }
+
+    @include xs {
+      @include dimension(100%, auto);
+      > section.products-1col {
+        @include productsSectionModule;
+      }
+      > section.products-2col {
+        @include flex-row;
+        @include productsSectionModule(20px);
+      }
+      > section.swiper {
+        @include swiperModule;
+      }
     }
   }
 }

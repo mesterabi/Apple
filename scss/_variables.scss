@@ -1,10 +1,8 @@
 // media query
-$media: (
-  "xl": 1200px,
-  "lg": 992px,
-  "md": 768px,
-  "sm": 576px,
-);
+  $xl: 1200px;
+  $lg: 992px;
+  $md: 768px;
+  $sm: 576px;
 
 // nav colors
 $nav-fontcolor: #ffffffcc;

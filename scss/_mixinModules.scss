@@ -1,5 +1,5 @@
 // header modules
-@mixin headerModule {
+@mixin headerModule($nav-width) {
   > div.black-bg {
     @include nav-background;
   }
@@ -9,12 +9,12 @@
     @include nav-hover;
 
     > nav {
-      @include dimension(65%, inherit);
+      @include dimension($nav-width, inherit);
       @include center;
       > ul {
         @include dimension(100%, inherit);
         @include flex-row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         list-style: none;
         @include menu-items;
@@ -64,7 +64,7 @@
 }
 
 // wrapper modules
-@mixin productsSectionModule($font:25px) {
+@mixin productsSectionModule($font: 25px) {
   @include dimension(100%, 580px);
   margin-bottom: 12px;
   > div.container {
@@ -98,16 +98,14 @@
 
 // swiper module
 @mixin swiperModule {
-  @include dimension(100%, 705px);
-  .mySwiper {
-    @include dimension(100%, 100%);
-  }
+  @include dimension(100%, auto);
   .swiper-wrapper {
-    @include dimension(100%, 650px);
+    @include dimension(100%, auto);
     @include flex-row;
   }
   .swiper-slide {
-    @include dimension(80vw, 670px);
+    @include dimension(80vw, auto);
+    margin-bottom: 10px;
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -120,29 +118,33 @@
       > img {
         display: block;
         @include dimension(100%, 100%);
-        object-fit: cover;
+        object-fit: contain;
       }
     }
+  }
+  .swiper-pagination {
+    display: block;
+    @include dimension(100%, 20px);
   }
 }
 
 // footer modules
-@mixin footerModule {
+@mixin footerModule($footer-width) {
   background-color: $footer-bgcolor;
   @include flex-row;
   justify-content: center;
   > div.footer-container {
-    @include dimension(67vw, inherit);
-    @include padding(0,22px,0,22px);
+    @include dimension($footer-width, auto);
+    @include padding(0, 22px, 0, 22px);
     > section.description {
       > ul {
-        @include dimension(100%, 360px);
-        @include padding(17px,0,11px);
+        @include dimension(100%, auto);
+        @include padding(17px, 0, 11px);
         list-style: none;
         @include border-bottom;
         > li {
           @include footer-textformat;
-          @include padding(0,0,10px);
+          @include padding(0, 0, 10px);
           > a {
             font-size: 12px;
             color: $footer-linkcolor;
@@ -159,15 +161,15 @@
           > h3 {
             color: $footer-dirtitlecolor;
             font-size: 12px;
-            @include margin(0,0,10px);
-            @include dimension(auto,16px);
+            @include margin(0, 0, 10px);
+            @include dimension(auto, 16px);
           }
           > ul {
-            @include margin(0,20px);
+            @include margin(0, 20px);
             list-style: none;
             > li {
-              @include margin(0,0,10px);
-              @include dimension(auto,16px);
+              @include margin(0, 0, 10px);
+              @include dimension(auto, 16px);
               @include footer-linkformat;
             }
           }
@@ -175,6 +177,7 @@
       }
     }
     > section.copyright {
+      @include flex-row(0, wrap);
       @include padding(34px, 0, 21px);
       > div.shop-ways {
         @include margin(0, 0, 7px);
@@ -182,13 +185,14 @@
         @include dimension(auto, 25px);
         font-size: 12px;
         color: $footer-fontcolor;
-        @include border-bottom;
         > a {
           color: $fontcolor-links;
           font-size: 12px;
         }
       }
       > div.rights {
+        @include border-top;
+        @include padding (5px);
         @include flex-row;
         align-items: baseline;
         > p {

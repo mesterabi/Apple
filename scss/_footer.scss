@@ -1,5 +1,19 @@
 body {
   > footer {
-    @include footerModule;
+    @include xl {
+      @include footerModule(950px);
+    }
+    @include lg {
+      @include footerModule(950px);
+    }
+    @include md {
+      @include footerModule(100%);
+    }
+    // @include sm {
+    //   @include footerModule;
+    // }
+    // @include xs {
+    //   @include footerModule;
+    // }
   }
 }

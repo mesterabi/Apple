@@ -22,14 +22,14 @@
 }
 
 // global padding
-@include xl {
   @for $i from 1 through 10 {
-    .pad-xl-#{$i*2} {
+    .pad-#{$i*2} {
       padding: 0 #{$i * 2px};
     }
   }
-}
-
 .pad-top-24 {
   padding-top: 24px;
+}
+.pad-right-0 {
+  padding-right: 0;
 }

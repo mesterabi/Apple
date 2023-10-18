@@ -1,29 +1,29 @@
 @mixin xl {
-  @media screen and (min-width: map-get($media,xl)) {
+  @media screen and (min-width: $xl) {
     @content;
   }
 }
 
 @mixin lg {
-  @media screen and  (min-width: map-get($media,lg)) and (max-width: #{map-get($media,xl) - 1px}) {
+  @media screen and  (min-width: $lg) and (max-width: #{$xl - 0.1px}) {
     @content;
   }
 }
 
 @mixin md {
-  @media screen and  (min-width: map-get($media,md)) and (max-width: #{map-get($media,lg) - 1px}) {
+  @media screen and  (min-width: $md) and (max-width: #{$lg - 0.1px}) {
     @content;
   }
 }
 
 @mixin sm {
-  @media screen and  (min-width: map-get($media,sm)) and (max-width: #{map-get($media,md) - 1px}) {
+  @media screen and  (min-width: $sm) and (max-width: #{$md - 0.1px}) {
     @content;
   }
 }
 
 @mixin xs {
-  @media screen and  (max-width: #{map-get($media,sm) - 1px}) {
+  @media screen and  (max-width: #{$sm - 0.1px}) {
     @content;
   }
 }

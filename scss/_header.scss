@@ -1,22 +1,22 @@
 body {
   @include xl {
-    @include headerModule;
+    @include headerModule (996px);
     @include submenuModule;
   }
   @include lg {
-    @include headerModule;
+    @include headerModule (996px);
     @include submenuModule;
   }
   @include md {
-    @include headerModule;
+    @include headerModule (100%);
     @include submenuModule;
   }
-  @include sm {
-    @include headerModule;
-    @include submenuModule;
-  }
-  @include xs {
-    @include headerModule;
-    @include submenuModule;
-  }
+  // @include sm {
+  //   @include headerModule;
+  //   @include submenuModule;
+  // }
+  // @include xs {
+  //   @include headerModule;
+  //   @include submenuModule;
+  // }
 }

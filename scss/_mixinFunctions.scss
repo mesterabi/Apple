@@ -6,9 +6,9 @@
 @mixin center {
   margin: 0 auto;
 }
-@mixin flex-row($gap: 0px) {
+@mixin flex-row($gap: 0px, $wrap: nowrap) {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row $wrap;
   gap: $gap;
 }
 @mixin flex-col($gap: 0px) {
@@ -19,6 +19,9 @@
 @mixin border-bottom {
   border-bottom: solid 0.8px $footer-bordercolor;
 }
+@mixin border-top {
+  border-top: solid 0.8px $footer-bordercolor;
+}
 @mixin border-right($color: $footer-bordercolor) {
   border-right: solid 0.8px $color;
 }
@@ -28,7 +31,7 @@
   margin-right: $right;
   margin-left: $left;
 }
-@mixin padding($top: 0, $right: 0, $bottom: 0, $left:0) {
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
   padding-top: $top;
   padding-bottom: $bottom;
   padding-right: $right;
@@ -36,7 +39,7 @@
 }
 // header functions
 @mixin nav-background {
-  width: 100%;
+  width: 100vw;
   height: 44px;
   background-color: black;
   position: absolute;
@@ -213,7 +216,6 @@
   }
 }
 
-
 // foote functions
 @mixin footer-linkformat {
   > a {
@@ -235,4 +237,3 @@
   font-weight: 400;
   letter-spacing: -0.01em;
 }
-
