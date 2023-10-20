@@ -251,7 +251,7 @@
             align-content: baseline;
             align-items: baseline;
             position: absolute;
-            bottom: 10%;
+            bottom: 7%;
             left: 5%; }
             body > main > section.swiper .swiper-slide > a > div.info > div.info-btn {
               width: 145px;
@@ -481,7 +481,7 @@
             align-content: baseline;
             align-items: baseline;
             position: absolute;
-            bottom: 10%;
+            bottom: 7%;
             left: 5%; }
             body > main > section.swiper .swiper-slide > a > div.info > div.info-btn {
               width: 145px;
@@ -711,7 +711,7 @@
             align-content: baseline;
             align-items: baseline;
             position: absolute;
-            bottom: 10%;
+            bottom: 7%;
             left: 5%; }
             body > main > section.swiper .swiper-slide > a > div.info > div.info-btn {
               width: 145px;
@@ -941,7 +941,7 @@
             align-content: baseline;
             align-items: baseline;
             position: absolute;
-            bottom: 10%;
+            bottom: 7%;
             left: 5%; }
             body > main > section.swiper .swiper-slide > a > div.info > div.info-btn {
               width: 145px;
@@ -1171,7 +1171,7 @@
             align-content: baseline;
             align-items: baseline;
             position: absolute;
-            bottom: 10%;
+            bottom: 7%;
             left: 5%; }
             body > main > section.swiper .swiper-slide > a > div.info > div.info-btn {
               width: 145px;
@@ -1242,7 +1242,7 @@
             visibility: visible;
             opacity: 1;
             transition: visibility 0s linear 0s, opacity 300ms; }
-          body > header > nav > ul > li > a {
+          body > header > nav > ul > li a {
             width: auto;
             height: inherit;
             display: flex;
@@ -1250,13 +1250,13 @@
             gap: 0px;
             align-items: center;
             text-decoration: none; }
-            body > header > nav > ul > li > a :hover {
+            body > header > nav > ul > li a :hover {
               color: #ffffff; }
-            body > header > nav > ul > li > a > span {
+            body > header > nav > ul > li a > span {
               font-size: 12px;
               font-weight: 400;
               color: #ffffffcc; }
-              body > header > nav > ul > li > a > span > i {
+              body > header > nav > ul > li a > span > i {
                 font-size: 14px; }
   body > header > nav > ul > li > div.submenu-container {
     width: 100%;
@@ -1333,7 +1333,9 @@
               letter-spacing: -0.01em;
               padding: 7px 11px; }
           body > header > nav > ul > li > div.submenu-container > div.submenu-content > div.items-col > ul > li:first-of-type {
-            margin-top: 10px; } }
+            margin-top: 10px; }
+  body .size-s {
+    display: none; } }
 
 @media screen and (min-width: 992px) and (max-width: 1199.9px) {
   body > div.black-bg {
@@ -1374,7 +1376,7 @@
             visibility: visible;
             opacity: 1;
             transition: visibility 0s linear 0s, opacity 300ms; }
-          body > header > nav > ul > li > a {
+          body > header > nav > ul > li a {
             width: auto;
             height: inherit;
             display: flex;
@@ -1382,13 +1384,13 @@
             gap: 0px;
             align-items: center;
             text-decoration: none; }
-            body > header > nav > ul > li > a :hover {
+            body > header > nav > ul > li a :hover {
               color: #ffffff; }
-            body > header > nav > ul > li > a > span {
+            body > header > nav > ul > li a > span {
               font-size: 12px;
               font-weight: 400;
               color: #ffffffcc; }
-              body > header > nav > ul > li > a > span > i {
+              body > header > nav > ul > li a > span > i {
                 font-size: 14px; }
   body > header > nav > ul > li > div.submenu-container {
     width: 100%;
@@ -1465,7 +1467,9 @@
               letter-spacing: -0.01em;
               padding: 7px 11px; }
           body > header > nav > ul > li > div.submenu-container > div.submenu-content > div.items-col > ul > li:first-of-type {
-            margin-top: 10px; } }
+            margin-top: 10px; }
+  body .size-s {
+    display: none; } }
 
 @media screen and (min-width: 768px) and (max-width: 991.9px) {
   body > div.black-bg {
@@ -1486,7 +1490,7 @@
     body > header:hover {
       background-color: #161617; }
     body > header > nav {
-      width: 100%;
+      width: 100vw;
       height: inherit;
       margin: 0 auto; }
       body > header > nav > ul {
@@ -1506,7 +1510,7 @@
             visibility: visible;
             opacity: 1;
             transition: visibility 0s linear 0s, opacity 300ms; }
-          body > header > nav > ul > li > a {
+          body > header > nav > ul > li a {
             width: auto;
             height: inherit;
             display: flex;
@@ -1514,13 +1518,13 @@
             gap: 0px;
             align-items: center;
             text-decoration: none; }
-            body > header > nav > ul > li > a :hover {
+            body > header > nav > ul > li a :hover {
               color: #ffffff; }
-            body > header > nav > ul > li > a > span {
+            body > header > nav > ul > li a > span {
               font-size: 12px;
               font-weight: 400;
               color: #ffffffcc; }
-              body > header > nav > ul > li > a > span > i {
+              body > header > nav > ul > li a > span > i {
                 font-size: 14px; }
   body > header > nav > ul > li > div.submenu-container {
     width: 100%;
@@ -1597,7 +1601,309 @@
               letter-spacing: -0.01em;
               padding: 7px 11px; }
           body > header > nav > ul > li > div.submenu-container > div.submenu-content > div.items-col > ul > li:first-of-type {
-            margin-top: 10px; } }
+            margin-top: 10px; }
+  body .size-s {
+    display: none; } }
+
+@media screen and (min-width: 576px) and (max-width: 767.9px) {
+  body > div.black-bg {
+    width: 100%;
+    height: 44px;
+    background-color: black;
+    position: absolute; }
+  body > header {
+    width: 100%;
+    height: 44px;
+    background-color: #161617;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    transition: 300ms;
+    background-color: #161617cc;
+    backdrop-filter: saturate(180%) blur(20px); }
+    body > header #show,
+    body > header #close {
+      display: none; }
+    body > header:hover {
+      background-color: #161617; }
+    body > header > nav {
+      width: inherit;
+      height: inherit; }
+      body > header > nav > ul {
+        width: inherit;
+        height: inherit;
+        font-size: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 30px;
+        padding-left: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center; }
+        body > header > nav > ul > li {
+          width: auto;
+          height: inherit;
+          transition: 3s ease-in-out; }
+          body > header > nav > ul > li:hover > div.submenu-container {
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0s linear 0s, opacity 300ms; }
+          body > header > nav > ul > li a,
+          body > header > nav > ul > li label {
+            width: auto;
+            height: inherit;
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0px;
+            align-items: center;
+            text-decoration: none; }
+            body > header > nav > ul > li a :hover,
+            body > header > nav > ul > li label :hover {
+              color: #ffffff; }
+            body > header > nav > ul > li a > span,
+            body > header > nav > ul > li label > span {
+              font-size: 12px;
+              font-weight: 400;
+              color: #ffffffcc; }
+              body > header > nav > ul > li a > span > i,
+              body > header > nav > ul > li label > span > i {
+                font-size: 14px; }
+        body > header > nav > ul > li {
+          display: none; }
+        body > header > nav > ul li.size-s,
+        body > header > nav > ul li.small-format {
+          display: block; }
+        body > header > nav > ul > li.logo {
+          flex-basis: 80%; }
+        body > header > nav > ul > li.menu div.menu-modal {
+          animation: fadeInAnimation ease 0.4s;
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+          width: 100vw;
+          height: 100vh;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #161617;
+          z-index: 555;
+          display: none;
+          overflow: auto; }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+          body > header > nav > ul > li.menu div.menu-modal > div.close-menu {
+            width: 100%;
+            height: 44px;
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0px;
+            padding-top: 5px;
+            padding-bottom: 0;
+            padding-right: 30px;
+            padding-left: 0;
+            justify-content: flex-end; }
+            body > header > nav > ul > li.menu div.menu-modal > div.close-menu > label {
+              text-decoration: none; }
+              body > header > nav > ul > li.menu div.menu-modal > div.close-menu > label :hover {
+                color: #ffffff; }
+              body > header > nav > ul > li.menu div.menu-modal > div.close-menu > label > span {
+                font-size: 12px;
+                font-weight: 400;
+                color: #ffffffcc; }
+                body > header > nav > ul > li.menu div.menu-modal > div.close-menu > label > span > i {
+                  font-size: 14px; }
+          body > header > nav > ul > li.menu div.menu-modal > ul {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 0px; }
+            body > header > nav > ul > li.menu div.menu-modal > ul > li {
+              width: 100%;
+              height: 54px; }
+              body > header > nav > ul > li.menu div.menu-modal > ul > li > a {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 0px;
+                justify-content: space-between;
+                width: inherit;
+                height: inherit;
+                padding-top: 3px;
+                padding-bottom: 4px;
+                padding-right: 30px;
+                padding-left: 48px;
+                text-decoration: none; }
+                body > header > nav > ul > li.menu div.menu-modal > ul > li > a :hover {
+                  color: #ffffff; }
+                body > header > nav > ul > li.menu div.menu-modal > ul > li > a > span {
+                  font-size: 12px;
+                  font-weight: 400;
+                  color: #ffffffcc; }
+                  body > header > nav > ul > li.menu div.menu-modal > ul > li > a > span > i {
+                    font-size: 14px; }
+                body > header > nav > ul > li.menu div.menu-modal > ul > li > a > span {
+                  font-size: 28px;
+                  font-weight: 700; }
+                  body > header > nav > ul > li.menu div.menu-modal > ul > li > a > span > i {
+                    display: none; }
+              body > header > nav > ul > li.menu div.menu-modal > ul > li:hover i {
+                display: block; }
+        body > header > nav > ul > li.menu #show:checked ~ div.menu-modal {
+          display: block; } }
+
+@media screen and (max-width: 575.9px) {
+  body > div.black-bg {
+    width: 100%;
+    height: 44px;
+    background-color: black;
+    position: absolute; }
+  body > header {
+    width: 100%;
+    height: 44px;
+    background-color: #161617;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    transition: 300ms;
+    background-color: #161617cc;
+    backdrop-filter: saturate(180%) blur(20px); }
+    body > header #show,
+    body > header #close {
+      display: none; }
+    body > header:hover {
+      background-color: #161617; }
+    body > header > nav {
+      width: inherit;
+      height: inherit; }
+      body > header > nav > ul {
+        width: inherit;
+        height: inherit;
+        font-size: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 30px;
+        padding-left: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center; }
+        body > header > nav > ul > li {
+          width: auto;
+          height: inherit;
+          transition: 3s ease-in-out; }
+          body > header > nav > ul > li:hover > div.submenu-container {
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0s linear 0s, opacity 300ms; }
+          body > header > nav > ul > li a,
+          body > header > nav > ul > li label {
+            width: auto;
+            height: inherit;
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0px;
+            align-items: center;
+            text-decoration: none; }
+            body > header > nav > ul > li a :hover,
+            body > header > nav > ul > li label :hover {
+              color: #ffffff; }
+            body > header > nav > ul > li a > span,
+            body > header > nav > ul > li label > span {
+              font-size: 12px;
+              font-weight: 400;
+              color: #ffffffcc; }
+              body > header > nav > ul > li a > span > i,
+              body > header > nav > ul > li label > span > i {
+                font-size: 14px; }
+        body > header > nav > ul > li {
+          display: none; }
+        body > header > nav > ul li.size-s,
+        body > header > nav > ul li.small-format {
+          display: block; }
+        body > header > nav > ul > li.logo {
+          flex-basis: 80%; }
+        body > header > nav > ul > li.menu div.menu-modal {
+          animation: fadeInAnimation ease 0.4s;
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+          width: 100vw;
+          height: 100vh;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #161617;
+          z-index: 555;
+          display: none;
+          overflow: auto; }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+          body > header > nav > ul > li.menu div.menu-modal > div.close-menu {
+            width: 100%;
+            height: 44px;
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0px;
+            padding-top: 5px;
+            padding-bottom: 0;
+            padding-right: 30px;
+            padding-left: 0;
+            justify-content: flex-end; }
+            body > header > nav > ul > li.menu div.menu-modal > div.close-menu > label {
+              text-decoration: none; }
+              body > header > nav > ul > li.menu div.menu-modal > div.close-menu > label :hover {
+                color: #ffffff; }
+              body > header > nav > ul > li.menu div.menu-modal > div.close-menu > label > span {
+                font-size: 12px;
+                font-weight: 400;
+                color: #ffffffcc; }
+                body > header > nav > ul > li.menu div.menu-modal > div.close-menu > label > span > i {
+                  font-size: 14px; }
+          body > header > nav > ul > li.menu div.menu-modal > ul {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 0px; }
+            body > header > nav > ul > li.menu div.menu-modal > ul > li {
+              width: 100%;
+              height: 54px; }
+              body > header > nav > ul > li.menu div.menu-modal > ul > li > a {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 0px;
+                justify-content: space-between;
+                width: inherit;
+                height: inherit;
+                padding-top: 3px;
+                padding-bottom: 4px;
+                padding-right: 30px;
+                padding-left: 48px;
+                text-decoration: none; }
+                body > header > nav > ul > li.menu div.menu-modal > ul > li > a :hover {
+                  color: #ffffff; }
+                body > header > nav > ul > li.menu div.menu-modal > ul > li > a > span {
+                  font-size: 12px;
+                  font-weight: 400;
+                  color: #ffffffcc; }
+                  body > header > nav > ul > li.menu div.menu-modal > ul > li > a > span > i {
+                    font-size: 14px; }
+                body > header > nav > ul > li.menu div.menu-modal > ul > li > a > span {
+                  font-size: 28px;
+                  font-weight: 700; }
+                  body > header > nav > ul > li.menu div.menu-modal > ul > li > a > span > i {
+                    display: none; }
+              body > header > nav > ul > li.menu div.menu-modal > ul > li:hover i {
+                display: block; }
+        body > header > nav > ul > li.menu #show:checked ~ div.menu-modal {
+          display: block; } }
 
 @media screen and (min-width: 1200px) {
   body > footer {
@@ -1693,65 +1999,80 @@
           padding-bottom: 8px;
           padding-right: 0;
           padding-left: 0;
-          width: auto;
+          width: 100%;
           height: 25px;
+          border-bottom: solid 0.8px #d2d2d7;
           font-size: 12px;
           color: #6e6e73; }
           body > footer > div.footer-container > section.copyright > div.shop-ways > a {
             color: #2997ff;
             font-size: 12px; }
-        body > footer > div.footer-container > section.copyright > div.rights {
-          border-top: solid 0.8px #d2d2d7;
-          padding-top: 5px;
-          padding-bottom: 0;
-          padding-right: 0;
-          padding-left: 0;
+        body > footer > div.footer-container > section.copyright > div.rights-container {
+          width: 100%;
           display: flex;
           flex-flow: row nowrap;
           gap: 0px;
-          align-items: baseline; }
-          body > footer > div.footer-container > section.copyright > div.rights > p {
-            display: inline-block;
-            margin-top: 5px;
-            margin-bottom: 0;
-            margin-right: 30px;
-            margin-left: 0;
-            font-size: 12px;
-            color: #6e6e73; }
-          body > footer > div.footer-container > section.copyright > div.rights > ul {
+          justify-content: space-between; }
+          body > footer > div.footer-container > section.copyright > div.rights-container > div.rights {
+            padding-top: 5px;
+            padding-bottom: 0;
+            padding-right: 0;
+            padding-left: 0;
             display: flex;
-            flex-flow: row nowrap;
-            gap: 0px;
-            list-style: none; }
-            body > footer > div.footer-container > section.copyright > div.rights > ul > li {
+            flex-flow: row wrap;
+            gap: 0;
+            align-items: baseline;
+            position: relative;
+            top: -3px;
+            z-index: 1; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > p {
+              display: inline-block;
               margin-top: 5px;
               margin-bottom: 0;
-              margin-right: 7px;
-              margin-left: 0; }
-              body > footer > div.footer-container > section.copyright > div.rights > ul > li > a {
-                display: block;
-                height: inherit;
-                color: #424245;
-                font-size: 12px;
-                text-decoration: none; }
-                body > footer > div.footer-container > section.copyright > div.rights > ul > li > a:hover {
-                  text-decoration: underline; }
-              body > footer > div.footer-container > section.copyright > div.rights > ul > li > a {
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-right: 10px;
-                padding-left: 0;
-                border-right: solid 0.8px #424245; }
-          body > footer > div.footer-container > section.copyright > div.rights div.location {
-            position: relative;
-            right: -220px; }
-            body > footer > div.footer-container > section.copyright > div.rights div.location > a {
+              margin-right: 30px;
+              margin-left: 0;
+              font-size: 12px;
+              color: #6e6e73; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul {
+              display: flex;
+              flex-flow: row nowrap;
+              gap: 0px;
+              list-style: none; }
+              body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li {
+                margin-top: 5px;
+                margin-bottom: 0;
+                margin-right: 7px;
+                margin-left: 0; }
+                body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
+                  display: block;
+                  height: inherit;
+                  color: #424245;
+                  font-size: 12px;
+                  text-decoration: none; }
+                  body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a:hover {
+                    text-decoration: underline; }
+                body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
+                  padding-top: 0;
+                  padding-bottom: 0;
+                  padding-right: 10px;
+                  padding-left: 0;
+                  border-right: solid 0.8px #424245; }
+          body > footer > div.footer-container > section.copyright > div.rights-container > div.location {
+            padding-top: 7px;
+            padding-bottom: 0;
+            padding-right: 0;
+            padding-left: 0;
+            float: right;
+            z-index: 2;
+            white-space: nowrap;
+            text-align: right; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.location > a {
               display: block;
               height: inherit;
               color: #424245;
               font-size: 12px;
               text-decoration: none; }
-              body > footer > div.footer-container > section.copyright > div.rights div.location > a:hover {
+              body > footer > div.footer-container > section.copyright > div.rights-container > div.location > a:hover {
                 text-decoration: underline; } }
 
 @media screen and (min-width: 992px) and (max-width: 1199.9px) {
@@ -1848,65 +2169,80 @@
           padding-bottom: 8px;
           padding-right: 0;
           padding-left: 0;
-          width: auto;
+          width: 100%;
           height: 25px;
+          border-bottom: solid 0.8px #d2d2d7;
           font-size: 12px;
           color: #6e6e73; }
           body > footer > div.footer-container > section.copyright > div.shop-ways > a {
             color: #2997ff;
             font-size: 12px; }
-        body > footer > div.footer-container > section.copyright > div.rights {
-          border-top: solid 0.8px #d2d2d7;
-          padding-top: 5px;
-          padding-bottom: 0;
-          padding-right: 0;
-          padding-left: 0;
+        body > footer > div.footer-container > section.copyright > div.rights-container {
+          width: 100%;
           display: flex;
           flex-flow: row nowrap;
           gap: 0px;
-          align-items: baseline; }
-          body > footer > div.footer-container > section.copyright > div.rights > p {
-            display: inline-block;
-            margin-top: 5px;
-            margin-bottom: 0;
-            margin-right: 30px;
-            margin-left: 0;
-            font-size: 12px;
-            color: #6e6e73; }
-          body > footer > div.footer-container > section.copyright > div.rights > ul {
+          justify-content: space-between; }
+          body > footer > div.footer-container > section.copyright > div.rights-container > div.rights {
+            padding-top: 5px;
+            padding-bottom: 0;
+            padding-right: 0;
+            padding-left: 0;
             display: flex;
-            flex-flow: row nowrap;
-            gap: 0px;
-            list-style: none; }
-            body > footer > div.footer-container > section.copyright > div.rights > ul > li {
+            flex-flow: row wrap;
+            gap: 0;
+            align-items: baseline;
+            position: relative;
+            top: -3px;
+            z-index: 1; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > p {
+              display: inline-block;
               margin-top: 5px;
               margin-bottom: 0;
-              margin-right: 7px;
-              margin-left: 0; }
-              body > footer > div.footer-container > section.copyright > div.rights > ul > li > a {
-                display: block;
-                height: inherit;
-                color: #424245;
-                font-size: 12px;
-                text-decoration: none; }
-                body > footer > div.footer-container > section.copyright > div.rights > ul > li > a:hover {
-                  text-decoration: underline; }
-              body > footer > div.footer-container > section.copyright > div.rights > ul > li > a {
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-right: 10px;
-                padding-left: 0;
-                border-right: solid 0.8px #424245; }
-          body > footer > div.footer-container > section.copyright > div.rights div.location {
-            position: relative;
-            right: -220px; }
-            body > footer > div.footer-container > section.copyright > div.rights div.location > a {
+              margin-right: 30px;
+              margin-left: 0;
+              font-size: 12px;
+              color: #6e6e73; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul {
+              display: flex;
+              flex-flow: row nowrap;
+              gap: 0px;
+              list-style: none; }
+              body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li {
+                margin-top: 5px;
+                margin-bottom: 0;
+                margin-right: 7px;
+                margin-left: 0; }
+                body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
+                  display: block;
+                  height: inherit;
+                  color: #424245;
+                  font-size: 12px;
+                  text-decoration: none; }
+                  body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a:hover {
+                    text-decoration: underline; }
+                body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
+                  padding-top: 0;
+                  padding-bottom: 0;
+                  padding-right: 10px;
+                  padding-left: 0;
+                  border-right: solid 0.8px #424245; }
+          body > footer > div.footer-container > section.copyright > div.rights-container > div.location {
+            padding-top: 7px;
+            padding-bottom: 0;
+            padding-right: 0;
+            padding-left: 0;
+            float: right;
+            z-index: 2;
+            white-space: nowrap;
+            text-align: right; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.location > a {
               display: block;
               height: inherit;
               color: #424245;
               font-size: 12px;
               text-decoration: none; }
-              body > footer > div.footer-container > section.copyright > div.rights div.location > a:hover {
+              body > footer > div.footer-container > section.copyright > div.rights-container > div.location > a:hover {
                 text-decoration: underline; } }
 
 @media screen and (min-width: 768px) and (max-width: 991.9px) {
@@ -2003,63 +2339,78 @@
           padding-bottom: 8px;
           padding-right: 0;
           padding-left: 0;
-          width: auto;
+          width: 100%;
           height: 25px;
+          border-bottom: solid 0.8px #d2d2d7;
           font-size: 12px;
           color: #6e6e73; }
           body > footer > div.footer-container > section.copyright > div.shop-ways > a {
             color: #2997ff;
             font-size: 12px; }
-        body > footer > div.footer-container > section.copyright > div.rights {
-          border-top: solid 0.8px #d2d2d7;
-          padding-top: 5px;
-          padding-bottom: 0;
-          padding-right: 0;
-          padding-left: 0;
+        body > footer > div.footer-container > section.copyright > div.rights-container {
+          width: 100%;
           display: flex;
           flex-flow: row nowrap;
           gap: 0px;
-          align-items: baseline; }
-          body > footer > div.footer-container > section.copyright > div.rights > p {
-            display: inline-block;
-            margin-top: 5px;
-            margin-bottom: 0;
-            margin-right: 30px;
-            margin-left: 0;
-            font-size: 12px;
-            color: #6e6e73; }
-          body > footer > div.footer-container > section.copyright > div.rights > ul {
+          justify-content: space-between; }
+          body > footer > div.footer-container > section.copyright > div.rights-container > div.rights {
+            padding-top: 5px;
+            padding-bottom: 0;
+            padding-right: 0;
+            padding-left: 0;
             display: flex;
-            flex-flow: row nowrap;
-            gap: 0px;
-            list-style: none; }
-            body > footer > div.footer-container > section.copyright > div.rights > ul > li {
+            flex-flow: row wrap;
+            gap: 0;
+            align-items: baseline;
+            position: relative;
+            top: -3px;
+            z-index: 1; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > p {
+              display: inline-block;
               margin-top: 5px;
               margin-bottom: 0;
-              margin-right: 7px;
-              margin-left: 0; }
-              body > footer > div.footer-container > section.copyright > div.rights > ul > li > a {
-                display: block;
-                height: inherit;
-                color: #424245;
-                font-size: 12px;
-                text-decoration: none; }
-                body > footer > div.footer-container > section.copyright > div.rights > ul > li > a:hover {
-                  text-decoration: underline; }
-              body > footer > div.footer-container > section.copyright > div.rights > ul > li > a {
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-right: 10px;
-                padding-left: 0;
-                border-right: solid 0.8px #424245; }
-          body > footer > div.footer-container > section.copyright > div.rights div.location {
-            position: relative;
-            right: -220px; }
-            body > footer > div.footer-container > section.copyright > div.rights div.location > a {
+              margin-right: 30px;
+              margin-left: 0;
+              font-size: 12px;
+              color: #6e6e73; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul {
+              display: flex;
+              flex-flow: row nowrap;
+              gap: 0px;
+              list-style: none; }
+              body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li {
+                margin-top: 5px;
+                margin-bottom: 0;
+                margin-right: 7px;
+                margin-left: 0; }
+                body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
+                  display: block;
+                  height: inherit;
+                  color: #424245;
+                  font-size: 12px;
+                  text-decoration: none; }
+                  body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a:hover {
+                    text-decoration: underline; }
+                body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
+                  padding-top: 0;
+                  padding-bottom: 0;
+                  padding-right: 10px;
+                  padding-left: 0;
+                  border-right: solid 0.8px #424245; }
+          body > footer > div.footer-container > section.copyright > div.rights-container > div.location {
+            padding-top: 7px;
+            padding-bottom: 0;
+            padding-right: 0;
+            padding-left: 0;
+            float: right;
+            z-index: 2;
+            white-space: nowrap;
+            text-align: right; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.location > a {
               display: block;
               height: inherit;
               color: #424245;
               font-size: 12px;
               text-decoration: none; }
-              body > footer > div.footer-container > section.copyright > div.rights div.location > a:hover {
+              body > footer > div.footer-container > section.copyright > div.rights-container > div.location > a:hover {
                 text-decoration: underline; } }

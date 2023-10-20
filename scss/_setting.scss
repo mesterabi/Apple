@@ -6,7 +6,6 @@
   font-family: Arial, Helvetica, sans-serif;
   // letter-spacing: 0.02px;
 }
-
 // global classes
 .blackfont {
   color: $fontcolor-dark !important;
@@ -22,11 +21,11 @@
 }
 
 // global padding
-  @for $i from 1 through 10 {
-    .pad-#{$i*2} {
-      padding: 0 #{$i * 2px};
-    }
+@for $i from 1 through 10 {
+  .pad-#{$i*2} {
+    padding: 0 #{$i * 2px};
   }
+}
 .pad-top-24 {
   padding-top: 24px;
 }

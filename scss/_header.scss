@@ -1,22 +1,23 @@
 body {
   @include xl {
-    @include headerModule (996px);
+    @include headerModule(996px);
     @include submenuModule;
+    @include hide-small-size;
   }
   @include lg {
-    @include headerModule (996px);
+    @include headerModule(996px);
     @include submenuModule;
+    @include hide-small-size;
   }
   @include md {
-    @include headerModule (100%);
+    @include headerModule(100vw);
     @include submenuModule;
+    @include hide-small-size;
   }
-  // @include sm {
-  //   @include headerModule;
-  //   @include submenuModule;
-  // }
-  // @include xs {
-  //   @include headerModule;
-  //   @include submenuModule;
-  // }
+  @include sm {
+    @include smallsizeheaderModuler;
+  }
+  @include xs {
+    @include smallsizeheaderModuler;
+  }
 }

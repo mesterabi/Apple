@@ -37,6 +37,24 @@
   padding-right: $right;
   padding-left: $left;
 }
+@mixin hide-small-size {
+  .size-s {
+    display: none;
+  }
+}
+@mixin fadein-animation {
+  animation: fadeInAnimation ease 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
 // header functions
 @mixin nav-background {
   width: 100%;
@@ -78,25 +96,16 @@
   }
 }
 @mixin menu-items {
-  > li {
-    @include dimension(auto, inherit);
-    @include submenu-visible;
-    > a {
-      @include dimension(auto, inherit);
-      @include flex-row;
-      align-items: center;
-      text-decoration: none;
-      :hover {
-        color: $nav-hfontcolor;
-      }
-      > span {
-        font-size: 12px;
-        font-weight: 400;
-        color: $nav-fontcolor;
-        > i {
-          font-size: 14px;
-        }
-      }
+  text-decoration: none;
+  :hover {
+    color: $nav-hfontcolor;
+  }
+  > span {
+    font-size: 12px;
+    font-weight: 400;
+    color: $nav-fontcolor;
+    > i {
+      font-size: 14px;
     }
   }
 }
@@ -225,7 +234,7 @@
     align-content: baseline;
     align-items: baseline;
     position: absolute;
-    bottom: 10%;
+    bottom: 7%;
     left: 5%;
     > div.info-btn {
       @include dimension(145px, 43px);

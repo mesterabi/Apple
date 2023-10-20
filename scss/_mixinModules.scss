@@ -17,7 +17,16 @@
         justify-content: space-evenly;
         align-items: center;
         list-style: none;
-        @include menu-items;
+        > li {
+          @include dimension(auto, inherit);
+          @include submenu-visible;
+          a {
+            @include dimension(auto, inherit);
+            @include flex-row;
+            align-items: center;
+            @include menu-items;
+          }
+        }
       }
     }
   }
@@ -63,6 +72,104 @@
   }
 }
 
+@mixin smallsizeheaderModuler {
+  > div.black-bg {
+    @include nav-background;
+  }
+  > header {
+    #show,
+    #close {
+      display: none;
+    }
+    @include dimension(100%, 44px);
+    background-color: $nav-hbgcolor;
+    @include nav-position;
+    @include nav-hover;
+    > nav {
+      @include dimension(inherit, inherit);
+      > ul {
+        @include dimension(inherit, inherit);
+        > li {
+          @include dimension(auto, inherit);
+          @include submenu-visible;
+          a,
+          label {
+            @include dimension(auto, inherit);
+            @include flex-row;
+            align-items: center;
+            @include menu-items;
+          }
+        }
+        font-size: 14px;
+        @include padding(5px, 30px, 5px, 20px);
+        @include flex-row(30px);
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        > li {
+          display: none;
+        }
+        li.size-s,
+        li.small-format {
+          display: block;
+        }
+        > li.logo {
+          flex-basis: 80%;
+        }
+        > li.menu {
+          div.menu-modal {
+            @include fadein-animation;
+            @include dimension(100vw, 100vh);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $nav-hbgcolor;
+            z-index: 555;
+            display: none;
+            overflow: auto;
+            > div.close-menu {
+              @include dimension(100%, 44px);
+              @include flex-row;
+              @include padding(5px, 30px);
+              justify-content: flex-end;
+              > label {
+                @include menu-items;
+              }
+            }
+            > ul {
+              @include flex-col;
+              > li {
+                @include dimension(100%, 54px);
+                > a {
+                  @include flex-row;
+                  justify-content: space-between;
+                  @include dimension(inherit, inherit);
+                  @include padding(3px, 30px, 4px, 48px);
+                  @include menu-items;
+                  > span {
+                    font-size: 28px;
+                    font-weight: 700;
+                    > i {
+                      display: none;
+                    }
+                  }
+                }
+                &:hover {
+                  i {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+          #show:checked ~ div.menu-modal {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
 // wrapper modules
 @mixin productsSectionModule($font: 25px) {
   @include dimension(100%, 580px);
@@ -183,7 +290,8 @@
       > div.shop-ways {
         @include margin(0, 0, 7px);
         @include padding(0, 0, 8px);
-        @include dimension(auto, 25px);
+        @include dimension(100%, 25px);
+        @include border-bottom;
         font-size: 12px;
         color: $footer-fontcolor;
         > a {
@@ -191,33 +299,44 @@
           font-size: 12px;
         }
       }
-      > div.rights {
-        @include border-top;
-        @include padding (5px);
+      > div.rights-container {
+        width: 100%;
         @include flex-row;
-        align-items: baseline;
-        > p {
-          display: inline-block;
-          @include margin(5px, 30px);
-          font-size: 12px;
-          color: $footer-fontcolor;
-        }
-        > ul {
-          @include flex-row;
-          list-style: none;
-          > li {
-            @include footer-linkformat;
-            @include margin(5px, 7px);
-            > a {
-              @include padding(0, 10px);
-              @include border-right($footer-linkcolor);
+        justify-content: space-between;
+        > div.rights {
+          // @include border-top;
+          @include padding(5px);
+          @include flex-row(0, wrap);
+          align-items: baseline;
+          position: relative;
+          top: -3px;
+          z-index: 1;
+          > p {
+            display: inline-block;
+            @include margin(5px, 30px);
+            font-size: 12px;
+            color: $footer-fontcolor;
+          }
+          > ul {
+            @include flex-row;
+            list-style: none;
+            > li {
+              @include footer-linkformat;
+              @include margin(5px, 7px);
+              > a {
+                @include padding(0, 10px);
+                @include border-right($footer-linkcolor);
+              }
             }
           }
         }
-        div.location {
+        > div.location {
           @include footer-linkformat;
-          position: relative;
-          right: -220px;
+          @include padding(7px);
+          float: right;
+          z-index: 2;
+          white-space: nowrap;
+          text-align: right;
         }
       }
     }
