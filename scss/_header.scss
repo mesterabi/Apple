@@ -15,9 +15,9 @@ body {
     @include hide-small-size;
   }
   @include sm {
-    @include smallsizeheaderModuler;
+    @include smallsizeheaderModule;
   }
   @include xs {
-    @include smallsizeheaderModuler;
+    @include smallsizeheaderModule;
   }
 }

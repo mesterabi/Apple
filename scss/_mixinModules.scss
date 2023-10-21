@@ -72,7 +72,7 @@
   }
 }
 
-@mixin smallsizeheaderModuler {
+@mixin smallsizeheaderModule {
   > div.black-bg {
     @include nav-background;
   }
@@ -237,29 +237,14 @@
 }
 
 // footer modules
-@mixin footerModule($footer-width) {
+@mixin footerModule($footer-width: 100%) {
   background-color: $footer-bgcolor;
   @include flex-row;
   justify-content: center;
   > div.footer-container {
     @include dimension($footer-width, auto);
     @include padding(0, 22px, 0, 22px);
-    > section.description {
-      > ul {
-        @include dimension(100%, auto);
-        @include padding(17px, 0, 11px);
-        list-style: none;
-        @include border-bottom;
-        > li {
-          @include footer-textformat;
-          @include padding(0, 0, 10px);
-          > a {
-            font-size: 12px;
-            color: $footer-linkcolor;
-          }
-        }
-      }
-    }
+    @include footer-description;
     > nav {
       @include flex-row;
       > section.directory-col {
@@ -277,8 +262,10 @@
             list-style: none;
             > li {
               @include margin(0, 0, 10px);
-              @include dimension(auto, 16px);
-              @include footer-linkformat;
+              @include dimension(auto, auto);
+              > a {
+                @include footer-linkformat;
+              }
             }
           }
         }
@@ -290,7 +277,6 @@
       > div.shop-ways {
         @include margin(0, 0, 7px);
         @include padding(0, 0, 8px);
-        @include dimension(100%, 25px);
         @include border-bottom;
         font-size: 12px;
         color: $footer-fontcolor;
@@ -301,7 +287,7 @@
       }
       > div.rights-container {
         width: 100%;
-        @include flex-row;
+        @include flex-row(0, wrap);
         justify-content: space-between;
         > div.rights {
           // @include border-top;
@@ -319,9 +305,13 @@
           }
           > ul {
             @include flex-row;
+            @include dimension(100%, 24px);
             list-style: none;
             > li {
-              @include footer-linkformat;
+              white-space: nowrap;
+              > a {
+                @include footer-linkformat;
+              }
               @include margin(5px, 7px);
               > a {
                 @include padding(0, 10px);
@@ -331,12 +321,109 @@
           }
         }
         > div.location {
-          @include footer-linkformat;
+          > a {
+            @include footer-linkformat;
+          }
           @include padding(7px);
           float: right;
           z-index: 2;
           white-space: nowrap;
           text-align: right;
+        }
+      }
+    }
+  }
+}
+
+@mixin smallsizefooterModule {
+  background-color: $footer-bgcolor;
+  @include flex-row;
+  justify-content: center;
+  > div.footer-container {
+    @include dimension(100%, auto);
+    @include padding(0, 22px, 0, 22px);
+    @include footer-description;
+    > section.description {
+      margin-bottom: 20px;
+    }
+    > nav {
+      @include flex-col;
+      > section.directory-col {
+        > div.directory {
+          padding: 0;
+          @include dimension(100%, 37px);
+          @include border-bottom;
+          overflow: hidden;
+          h3,
+          a,
+          i {
+            @include footer-textformat;
+            line-height: 37px;
+          }
+          > h3 {
+            @include flex-row;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+    > section.copyright {
+      @include flex-row(0, wrap);
+      @include padding(20px, 0, 21px);
+      > div.shop-ways {
+        @include margin(0, 0, 7px);
+        @include padding(0, 0, 8px);
+        @include dimension(100%, 25px);
+        font-size: 12px;
+        color: $footer-fontcolor;
+        > a {
+          color: $fontcolor-links;
+          font-size: 12px;
+        }
+      }
+      > div.rights-container {
+        width: 100%;
+        @include flex-col;
+        justify-content: space-between;
+        > div.rights {
+          &::before {
+            content: "United States";
+            color: $footer-linkcolor;
+            font-size: 12px;
+            padding-bottom: 10px;
+          }
+          // @include border-top;
+          width: 100%;
+          @include padding(5px);
+          @include flex-col(5px);
+          align-items: baseline;
+          position: relative;
+          top: -3px;
+          z-index: 1;
+          > p {
+            display: inline-block;
+            @include margin(5px, 30px);
+            font-size: 12px;
+            color: $footer-fontcolor;
+          }
+          > ul {
+            @include flex-row(0, wrap);
+            row-gap: 5px;
+            list-style: none;
+            > li {
+              > a {
+                @include footer-linkformat;
+              }
+              @include margin(5px, 7px);
+              > a {
+                @include padding(0, 10px);
+                @include border-right($footer-linkcolor);
+              }
+            }
+          }
+        }
+        > div.location {
+          display: none;
         }
       }
     }

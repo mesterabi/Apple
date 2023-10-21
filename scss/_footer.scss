@@ -7,13 +7,13 @@ body {
       @include footerModule(950px);
     }
     @include md {
-      @include footerModule(100%);
+      @include footerModule;
     }
-    // @include sm {
-    //   @include footerModule;
-    // }
-    // @include xs {
-    //   @include footerModule;
-    // }
+    @include sm {
+      @include smallsizefooterModule;
+    }
+    @include xs {
+      @include smallsizefooterModule;
+    }
   }
 }

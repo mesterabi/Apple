@@ -1973,13 +1973,14 @@
               margin-right: 0;
               margin-left: 0;
               width: auto;
-              height: 16px; }
+              height: auto; }
               body > footer > div.footer-container > nav > section.directory-col > div.directory > ul > li > a {
                 display: block;
                 height: inherit;
                 color: #424245;
                 font-size: 12px;
-                text-decoration: none; }
+                text-decoration: none;
+                line-height: 1.5; }
                 body > footer > div.footer-container > nav > section.directory-col > div.directory > ul > li > a:hover {
                   text-decoration: underline; }
       body > footer > div.footer-container > section.copyright {
@@ -1999,8 +2000,6 @@
           padding-bottom: 8px;
           padding-right: 0;
           padding-left: 0;
-          width: 100%;
-          height: 25px;
           border-bottom: solid 0.8px #d2d2d7;
           font-size: 12px;
           color: #6e6e73; }
@@ -2010,8 +2009,8 @@
         body > footer > div.footer-container > section.copyright > div.rights-container {
           width: 100%;
           display: flex;
-          flex-flow: row nowrap;
-          gap: 0px;
+          flex-flow: row wrap;
+          gap: 0;
           justify-content: space-between; }
           body > footer > div.footer-container > section.copyright > div.rights-container > div.rights {
             padding-top: 5px;
@@ -2037,8 +2036,11 @@
               display: flex;
               flex-flow: row nowrap;
               gap: 0px;
+              width: 100%;
+              height: 24px;
               list-style: none; }
               body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li {
+                white-space: nowrap;
                 margin-top: 5px;
                 margin-bottom: 0;
                 margin-right: 7px;
@@ -2048,7 +2050,8 @@
                   height: inherit;
                   color: #424245;
                   font-size: 12px;
-                  text-decoration: none; }
+                  text-decoration: none;
+                  line-height: 1.5; }
                   body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a:hover {
                     text-decoration: underline; }
                 body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
@@ -2071,7 +2074,8 @@
               height: inherit;
               color: #424245;
               font-size: 12px;
-              text-decoration: none; }
+              text-decoration: none;
+              line-height: 1.5; }
               body > footer > div.footer-container > section.copyright > div.rights-container > div.location > a:hover {
                 text-decoration: underline; } }
 
@@ -2143,13 +2147,14 @@
               margin-right: 0;
               margin-left: 0;
               width: auto;
-              height: 16px; }
+              height: auto; }
               body > footer > div.footer-container > nav > section.directory-col > div.directory > ul > li > a {
                 display: block;
                 height: inherit;
                 color: #424245;
                 font-size: 12px;
-                text-decoration: none; }
+                text-decoration: none;
+                line-height: 1.5; }
                 body > footer > div.footer-container > nav > section.directory-col > div.directory > ul > li > a:hover {
                   text-decoration: underline; }
       body > footer > div.footer-container > section.copyright {
@@ -2169,8 +2174,6 @@
           padding-bottom: 8px;
           padding-right: 0;
           padding-left: 0;
-          width: 100%;
-          height: 25px;
           border-bottom: solid 0.8px #d2d2d7;
           font-size: 12px;
           color: #6e6e73; }
@@ -2180,8 +2183,8 @@
         body > footer > div.footer-container > section.copyright > div.rights-container {
           width: 100%;
           display: flex;
-          flex-flow: row nowrap;
-          gap: 0px;
+          flex-flow: row wrap;
+          gap: 0;
           justify-content: space-between; }
           body > footer > div.footer-container > section.copyright > div.rights-container > div.rights {
             padding-top: 5px;
@@ -2207,8 +2210,11 @@
               display: flex;
               flex-flow: row nowrap;
               gap: 0px;
+              width: 100%;
+              height: 24px;
               list-style: none; }
               body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li {
+                white-space: nowrap;
                 margin-top: 5px;
                 margin-bottom: 0;
                 margin-right: 7px;
@@ -2218,7 +2224,8 @@
                   height: inherit;
                   color: #424245;
                   font-size: 12px;
-                  text-decoration: none; }
+                  text-decoration: none;
+                  line-height: 1.5; }
                   body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a:hover {
                     text-decoration: underline; }
                 body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
@@ -2241,7 +2248,8 @@
               height: inherit;
               color: #424245;
               font-size: 12px;
-              text-decoration: none; }
+              text-decoration: none;
+              line-height: 1.5; }
               body > footer > div.footer-container > section.copyright > div.rights-container > div.location > a:hover {
                 text-decoration: underline; } }
 
@@ -2313,13 +2321,14 @@
               margin-right: 0;
               margin-left: 0;
               width: auto;
-              height: 16px; }
+              height: auto; }
               body > footer > div.footer-container > nav > section.directory-col > div.directory > ul > li > a {
                 display: block;
                 height: inherit;
                 color: #424245;
                 font-size: 12px;
-                text-decoration: none; }
+                text-decoration: none;
+                line-height: 1.5; }
                 body > footer > div.footer-container > nav > section.directory-col > div.directory > ul > li > a:hover {
                   text-decoration: underline; }
       body > footer > div.footer-container > section.copyright {
@@ -2339,8 +2348,6 @@
           padding-bottom: 8px;
           padding-right: 0;
           padding-left: 0;
-          width: 100%;
-          height: 25px;
           border-bottom: solid 0.8px #d2d2d7;
           font-size: 12px;
           color: #6e6e73; }
@@ -2350,8 +2357,8 @@
         body > footer > div.footer-container > section.copyright > div.rights-container {
           width: 100%;
           display: flex;
-          flex-flow: row nowrap;
-          gap: 0px;
+          flex-flow: row wrap;
+          gap: 0;
           justify-content: space-between; }
           body > footer > div.footer-container > section.copyright > div.rights-container > div.rights {
             padding-top: 5px;
@@ -2377,8 +2384,11 @@
               display: flex;
               flex-flow: row nowrap;
               gap: 0px;
+              width: 100%;
+              height: 24px;
               list-style: none; }
               body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li {
+                white-space: nowrap;
                 margin-top: 5px;
                 margin-bottom: 0;
                 margin-right: 7px;
@@ -2388,7 +2398,8 @@
                   height: inherit;
                   color: #424245;
                   font-size: 12px;
-                  text-decoration: none; }
+                  text-decoration: none;
+                  line-height: 1.5; }
                   body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a:hover {
                     text-decoration: underline; }
                 body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
@@ -2411,6 +2422,301 @@
               height: inherit;
               color: #424245;
               font-size: 12px;
-              text-decoration: none; }
+              text-decoration: none;
+              line-height: 1.5; }
               body > footer > div.footer-container > section.copyright > div.rights-container > div.location > a:hover {
                 text-decoration: underline; } }
+
+@media screen and (min-width: 576px) and (max-width: 767.9px) {
+  body > footer {
+    background-color: #f5f5f7;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0px;
+    justify-content: center; }
+    body > footer > div.footer-container {
+      width: 100%;
+      height: auto;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 22px;
+      padding-left: 22px; }
+      body > footer > div.footer-container > section.description > ul {
+        width: 100%;
+        height: auto;
+        padding-top: 17px;
+        padding-bottom: 11px;
+        padding-right: 0;
+        padding-left: 0;
+        list-style: none;
+        border-bottom: solid 0.8px #d2d2d7; }
+        body > footer > div.footer-container > section.description > ul > li {
+          font-size: 12px;
+          color: #6e6e73;
+          line-height: 1.5;
+          font-weight: 400;
+          letter-spacing: -0.01em;
+          padding-top: 0;
+          padding-bottom: 10px;
+          padding-right: 0;
+          padding-left: 0; }
+          body > footer > div.footer-container > section.description > ul > li > a {
+            font-size: 12px;
+            color: #424245; }
+      body > footer > div.footer-container > section.description {
+        margin-bottom: 20px; }
+      body > footer > div.footer-container > nav {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0px; }
+        body > footer > div.footer-container > nav > section.directory-col > div.directory {
+          padding: 0;
+          width: 100%;
+          height: 37px;
+          border-bottom: solid 0.8px #d2d2d7;
+          overflow: hidden; }
+          body > footer > div.footer-container > nav > section.directory-col > div.directory h3,
+          body > footer > div.footer-container > nav > section.directory-col > div.directory a,
+          body > footer > div.footer-container > nav > section.directory-col > div.directory i {
+            font-size: 12px;
+            color: #6e6e73;
+            line-height: 1.5;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            line-height: 37px; }
+          body > footer > div.footer-container > nav > section.directory-col > div.directory > h3 {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0px;
+            justify-content: space-between; }
+      body > footer > div.footer-container > section.copyright {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0;
+        padding-top: 20px;
+        padding-bottom: 21px;
+        padding-right: 0;
+        padding-left: 0; }
+        body > footer > div.footer-container > section.copyright > div.shop-ways {
+          margin-top: 0;
+          margin-bottom: 7px;
+          margin-right: 0;
+          margin-left: 0;
+          padding-top: 0;
+          padding-bottom: 8px;
+          padding-right: 0;
+          padding-left: 0;
+          width: 100%;
+          height: 25px;
+          font-size: 12px;
+          color: #6e6e73; }
+          body > footer > div.footer-container > section.copyright > div.shop-ways > a {
+            color: #2997ff;
+            font-size: 12px; }
+        body > footer > div.footer-container > section.copyright > div.rights-container {
+          width: 100%;
+          display: flex;
+          flex-flow: column nowrap;
+          gap: 0px;
+          justify-content: space-between; }
+          body > footer > div.footer-container > section.copyright > div.rights-container > div.rights {
+            width: 100%;
+            padding-top: 5px;
+            padding-bottom: 0;
+            padding-right: 0;
+            padding-left: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 5px;
+            align-items: baseline;
+            position: relative;
+            top: -3px;
+            z-index: 1; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights::before {
+              content: "United States";
+              color: #424245;
+              font-size: 12px;
+              padding-bottom: 10px; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > p {
+              display: inline-block;
+              margin-top: 5px;
+              margin-bottom: 0;
+              margin-right: 30px;
+              margin-left: 0;
+              font-size: 12px;
+              color: #6e6e73; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul {
+              display: flex;
+              flex-flow: row wrap;
+              gap: 0;
+              row-gap: 5px;
+              list-style: none; }
+              body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li {
+                margin-top: 5px;
+                margin-bottom: 0;
+                margin-right: 7px;
+                margin-left: 0; }
+                body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
+                  display: block;
+                  height: inherit;
+                  color: #424245;
+                  font-size: 12px;
+                  text-decoration: none;
+                  line-height: 1.5; }
+                  body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a:hover {
+                    text-decoration: underline; }
+                body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
+                  padding-top: 0;
+                  padding-bottom: 0;
+                  padding-right: 10px;
+                  padding-left: 0;
+                  border-right: solid 0.8px #424245; }
+          body > footer > div.footer-container > section.copyright > div.rights-container > div.location {
+            display: none; } }
+
+@media screen and (max-width: 575.9px) {
+  body > footer {
+    background-color: #f5f5f7;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0px;
+    justify-content: center; }
+    body > footer > div.footer-container {
+      width: 100%;
+      height: auto;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 22px;
+      padding-left: 22px; }
+      body > footer > div.footer-container > section.description > ul {
+        width: 100%;
+        height: auto;
+        padding-top: 17px;
+        padding-bottom: 11px;
+        padding-right: 0;
+        padding-left: 0;
+        list-style: none;
+        border-bottom: solid 0.8px #d2d2d7; }
+        body > footer > div.footer-container > section.description > ul > li {
+          font-size: 12px;
+          color: #6e6e73;
+          line-height: 1.5;
+          font-weight: 400;
+          letter-spacing: -0.01em;
+          padding-top: 0;
+          padding-bottom: 10px;
+          padding-right: 0;
+          padding-left: 0; }
+          body > footer > div.footer-container > section.description > ul > li > a {
+            font-size: 12px;
+            color: #424245; }
+      body > footer > div.footer-container > section.description {
+        margin-bottom: 20px; }
+      body > footer > div.footer-container > nav {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0px; }
+        body > footer > div.footer-container > nav > section.directory-col > div.directory {
+          padding: 0;
+          width: 100%;
+          height: 37px;
+          border-bottom: solid 0.8px #d2d2d7;
+          overflow: hidden; }
+          body > footer > div.footer-container > nav > section.directory-col > div.directory h3,
+          body > footer > div.footer-container > nav > section.directory-col > div.directory a,
+          body > footer > div.footer-container > nav > section.directory-col > div.directory i {
+            font-size: 12px;
+            color: #6e6e73;
+            line-height: 1.5;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            line-height: 37px; }
+          body > footer > div.footer-container > nav > section.directory-col > div.directory > h3 {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0px;
+            justify-content: space-between; }
+      body > footer > div.footer-container > section.copyright {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0;
+        padding-top: 20px;
+        padding-bottom: 21px;
+        padding-right: 0;
+        padding-left: 0; }
+        body > footer > div.footer-container > section.copyright > div.shop-ways {
+          margin-top: 0;
+          margin-bottom: 7px;
+          margin-right: 0;
+          margin-left: 0;
+          padding-top: 0;
+          padding-bottom: 8px;
+          padding-right: 0;
+          padding-left: 0;
+          width: 100%;
+          height: 25px;
+          font-size: 12px;
+          color: #6e6e73; }
+          body > footer > div.footer-container > section.copyright > div.shop-ways > a {
+            color: #2997ff;
+            font-size: 12px; }
+        body > footer > div.footer-container > section.copyright > div.rights-container {
+          width: 100%;
+          display: flex;
+          flex-flow: column nowrap;
+          gap: 0px;
+          justify-content: space-between; }
+          body > footer > div.footer-container > section.copyright > div.rights-container > div.rights {
+            width: 100%;
+            padding-top: 5px;
+            padding-bottom: 0;
+            padding-right: 0;
+            padding-left: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 5px;
+            align-items: baseline;
+            position: relative;
+            top: -3px;
+            z-index: 1; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights::before {
+              content: "United States";
+              color: #424245;
+              font-size: 12px;
+              padding-bottom: 10px; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > p {
+              display: inline-block;
+              margin-top: 5px;
+              margin-bottom: 0;
+              margin-right: 30px;
+              margin-left: 0;
+              font-size: 12px;
+              color: #6e6e73; }
+            body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul {
+              display: flex;
+              flex-flow: row wrap;
+              gap: 0;
+              row-gap: 5px;
+              list-style: none; }
+              body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li {
+                margin-top: 5px;
+                margin-bottom: 0;
+                margin-right: 7px;
+                margin-left: 0; }
+                body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
+                  display: block;
+                  height: inherit;
+                  color: #424245;
+                  font-size: 12px;
+                  text-decoration: none;
+                  line-height: 1.5; }
+                  body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a:hover {
+                    text-decoration: underline; }
+                body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
+                  padding-top: 0;
+                  padding-bottom: 0;
+                  padding-right: 10px;
+                  padding-left: 0;
+                  border-right: solid 0.8px #424245; }
+          body > footer > div.footer-container > section.copyright > div.rights-container > div.location {
+            display: none; } }
