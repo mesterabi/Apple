@@ -14,16 +14,40 @@
   color: $fontcolor-light !important;
 }
 .Products-titlebottom {
-  top: 320px !important;
+  top: 350px !important;
 }
 .apple-icon-size {
   font-size: 35px;
 }
 
 // global padding
-@for $i from 1 through 10 {
-  .pad-#{$i*2} {
-    padding: 0 #{$i * 2px};
+@include xl {
+  @for $i from 1 through 10 {
+    .pad-l-#{$i*2} {
+      padding: 0 #{$i * 2px};
+    }
+  }
+}
+@include lg {
+  @for $i from 1 through 10 {
+    .pad-l-#{$i*2} {
+      padding: 0 #{$i * 2px};
+    }
+  }
+}
+
+@include md {
+  @for $i from 1 through 10 {
+    .pad-l-#{$i*2} {
+      padding: 0 #{$i * 2px};
+    }
+  }
+}
+@include sm {
+  @for $i from 1 through 10 {
+    .pad-s-#{$i*2} {
+      padding: 0 #{$i * 2px};
+    }
   }
 }
 .pad-top-24 {

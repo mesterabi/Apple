@@ -12,40 +12,98 @@
   color: #f5f5f7 !important; }
 
 .Products-titlebottom {
-  top: 320px !important; }
+  top: 350px !important; }
 
 .apple-icon-size {
   font-size: 35px; }
 
-.pad-2 {
-  padding: 0 2px; }
+@media screen and (min-width: 1200px) {
+  .pad-l-2 {
+    padding: 0 2px; }
+  .pad-l-4 {
+    padding: 0 4px; }
+  .pad-l-6 {
+    padding: 0 6px; }
+  .pad-l-8 {
+    padding: 0 8px; }
+  .pad-l-10 {
+    padding: 0 10px; }
+  .pad-l-12 {
+    padding: 0 12px; }
+  .pad-l-14 {
+    padding: 0 14px; }
+  .pad-l-16 {
+    padding: 0 16px; }
+  .pad-l-18 {
+    padding: 0 18px; }
+  .pad-l-20 {
+    padding: 0 20px; } }
 
-.pad-4 {
-  padding: 0 4px; }
+@media screen and (min-width: 992px) and (max-width: 1199.9px) {
+  .pad-l-2 {
+    padding: 0 2px; }
+  .pad-l-4 {
+    padding: 0 4px; }
+  .pad-l-6 {
+    padding: 0 6px; }
+  .pad-l-8 {
+    padding: 0 8px; }
+  .pad-l-10 {
+    padding: 0 10px; }
+  .pad-l-12 {
+    padding: 0 12px; }
+  .pad-l-14 {
+    padding: 0 14px; }
+  .pad-l-16 {
+    padding: 0 16px; }
+  .pad-l-18 {
+    padding: 0 18px; }
+  .pad-l-20 {
+    padding: 0 20px; } }
 
-.pad-6 {
-  padding: 0 6px; }
+@media screen and (min-width: 768px) and (max-width: 991.9px) {
+  .pad-l-2 {
+    padding: 0 2px; }
+  .pad-l-4 {
+    padding: 0 4px; }
+  .pad-l-6 {
+    padding: 0 6px; }
+  .pad-l-8 {
+    padding: 0 8px; }
+  .pad-l-10 {
+    padding: 0 10px; }
+  .pad-l-12 {
+    padding: 0 12px; }
+  .pad-l-14 {
+    padding: 0 14px; }
+  .pad-l-16 {
+    padding: 0 16px; }
+  .pad-l-18 {
+    padding: 0 18px; }
+  .pad-l-20 {
+    padding: 0 20px; } }
 
-.pad-8 {
-  padding: 0 8px; }
-
-.pad-10 {
-  padding: 0 10px; }
-
-.pad-12 {
-  padding: 0 12px; }
-
-.pad-14 {
-  padding: 0 14px; }
-
-.pad-16 {
-  padding: 0 16px; }
-
-.pad-18 {
-  padding: 0 18px; }
-
-.pad-20 {
-  padding: 0 20px; }
+@media screen and (min-width: 576px) and (max-width: 767.9px) {
+  .pad-s-2 {
+    padding: 0 2px; }
+  .pad-s-4 {
+    padding: 0 4px; }
+  .pad-s-6 {
+    padding: 0 6px; }
+  .pad-s-8 {
+    padding: 0 8px; }
+  .pad-s-10 {
+    padding: 0 10px; }
+  .pad-s-12 {
+    padding: 0 12px; }
+  .pad-s-14 {
+    padding: 0 14px; }
+  .pad-s-16 {
+    padding: 0 16px; }
+  .pad-s-18 {
+    padding: 0 18px; }
+  .pad-s-20 {
+    padding: 0 20px; } }
 
 .pad-top-24 {
   padding-top: 24px; }
@@ -79,6 +137,10 @@
             height: inherit;
             object-fit: cover;
             object-position: center; }
+        body > main > section.products-1col > div.container > a.size-s {
+          position: absolute;
+          top: 0;
+          left: 0; }
         body > main > section.products-1col > div.container div.titles {
           display: flex;
           flex-flow: column nowrap;
@@ -158,6 +220,10 @@
             height: inherit;
             object-fit: cover;
             object-position: center; }
+        body > main > section.products-2col > div.container > a.size-s {
+          position: absolute;
+          top: 0;
+          left: 0; }
         body > main > section.products-2col > div.container div.titles {
           display: flex;
           flex-flow: column nowrap;
@@ -215,73 +281,84 @@
     body > main > section.swiper {
       width: 100%;
       height: auto; }
-      body > main > section.swiper .swiper-wrapper {
+      body > main > section.swiper > div.mySwiper > div.swiper-wrapper {
         width: 100%;
         height: auto;
         display: flex;
         flex-flow: row nowrap;
         gap: 0px; }
-      body > main > section.swiper .swiper-slide {
-        width: 80vw;
-        height: auto;
-        margin-bottom: 10px;
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        flex-flow: row nowrap;
-        gap: 0px;
-        justify-content: center;
-        align-items: flex-start; }
-        body > main > section.swiper .swiper-slide > a {
-          display: block;
-          width: 100%;
-          height: 100%; }
-          body > main > section.swiper .swiper-slide > a > img {
+        body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide {
+          width: 80vw;
+          height: auto;
+          margin-bottom: 10px;
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 0px;
+          justify-content: center;
+          align-items: flex-start; }
+          body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a {
             display: block;
             width: 100%;
-            height: 100%;
-            object-fit: contain; }
-          body > main > section.swiper .swiper-slide > a > div.info {
-            transform: translateY(0);
-            transition: all 0.6s;
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 30px;
-            align-content: baseline;
-            align-items: baseline;
-            position: absolute;
-            bottom: 7%;
-            left: 5%; }
-            body > main > section.swiper .swiper-slide > a > div.info > div.info-btn {
-              width: 145px;
-              height: 43px;
+            height: 100%; }
+            body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: contain; }
+            body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a img.size-s {
+              display: none; }
+            body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info {
+              width: 85%;
+              height: auto;
               display: flex;
               flex-flow: row nowrap;
-              gap: 5px;
-              justify-content: center;
-              align-items: center;
-              border-radius: 25px;
-              background-color: #fff;
-              color: #1d1d1f; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn:hover {
-                opacity: 0.8; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn > p {
-                display: inline-block;
-                font-size: 14px;
-                font-weight: 700; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn i {
-                font-size: 14px; }
-            body > main > section.swiper .swiper-slide > a > div.info > p {
-              max-width: 320px;
-              font-size: 18px;
-              color: #f5f5f7;
-              text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-              text-align: left; }
-      body > main > section.swiper .swiper-pagination {
+              gap: 30px;
+              align-content: baseline;
+              align-items: baseline;
+              position: absolute;
+              bottom: 7%;
+              left: 5%; }
+              body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn {
+                width: 145px;
+                height: 43px;
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+                background-color: #fff;
+                color: #1d1d1f; }
+                body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn:hover {
+                  opacity: 0.8; }
+                body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn > p {
+                  display: inline-block;
+                  font-size: 14px;
+                  font-weight: 700; }
+                body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn i {
+                  font-size: 14px; }
+              body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > p {
+                max-width: 320px;
+                font-size: 18px;
+                color: #f5f5f7;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+                text-align: left; }
+              body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info strong {
+                color: #f5f5f7;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+                text-align: left; }
+      body > main > section.swiper > div.mySwiper .swiper-pagination {
         display: block;
         width: 100%;
-        height: 20px; } }
+        height: 20px; }
+      body > main > section.swiper > div.mySwiper .swiper-button-next,
+      body > main > section.swiper > div.mySwiper .swiper-button-prev {
+        visibility: hidden; }
+    body > main .size-s {
+      display: none; } }
 
 @media screen and (min-width: 992px) and (max-width: 1199.9px) {
   body > main {
@@ -309,6 +386,10 @@
             height: inherit;
             object-fit: cover;
             object-position: center; }
+        body > main > section.products-1col > div.container > a.size-s {
+          position: absolute;
+          top: 0;
+          left: 0; }
         body > main > section.products-1col > div.container div.titles {
           display: flex;
           flex-flow: column nowrap;
@@ -388,6 +469,10 @@
             height: inherit;
             object-fit: cover;
             object-position: center; }
+        body > main > section.products-2col > div.container > a.size-s {
+          position: absolute;
+          top: 0;
+          left: 0; }
         body > main > section.products-2col > div.container div.titles {
           display: flex;
           flex-flow: column nowrap;
@@ -445,73 +530,84 @@
     body > main > section.swiper {
       width: 100%;
       height: auto; }
-      body > main > section.swiper .swiper-wrapper {
+      body > main > section.swiper > div.mySwiper > div.swiper-wrapper {
         width: 100%;
         height: auto;
         display: flex;
         flex-flow: row nowrap;
         gap: 0px; }
-      body > main > section.swiper .swiper-slide {
-        width: 80vw;
-        height: auto;
-        margin-bottom: 10px;
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        flex-flow: row nowrap;
-        gap: 0px;
-        justify-content: center;
-        align-items: flex-start; }
-        body > main > section.swiper .swiper-slide > a {
-          display: block;
-          width: 100%;
-          height: 100%; }
-          body > main > section.swiper .swiper-slide > a > img {
+        body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide {
+          width: 80vw;
+          height: auto;
+          margin-bottom: 10px;
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 0px;
+          justify-content: center;
+          align-items: flex-start; }
+          body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a {
             display: block;
             width: 100%;
-            height: 100%;
-            object-fit: contain; }
-          body > main > section.swiper .swiper-slide > a > div.info {
-            transform: translateY(0);
-            transition: all 0.6s;
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 30px;
-            align-content: baseline;
-            align-items: baseline;
-            position: absolute;
-            bottom: 7%;
-            left: 5%; }
-            body > main > section.swiper .swiper-slide > a > div.info > div.info-btn {
-              width: 145px;
-              height: 43px;
+            height: 100%; }
+            body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: contain; }
+            body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a img.size-s {
+              display: none; }
+            body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info {
+              width: 85%;
+              height: auto;
               display: flex;
               flex-flow: row nowrap;
-              gap: 5px;
-              justify-content: center;
-              align-items: center;
-              border-radius: 25px;
-              background-color: #fff;
-              color: #1d1d1f; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn:hover {
-                opacity: 0.8; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn > p {
-                display: inline-block;
-                font-size: 14px;
-                font-weight: 700; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn i {
-                font-size: 14px; }
-            body > main > section.swiper .swiper-slide > a > div.info > p {
-              max-width: 320px;
-              font-size: 18px;
-              color: #f5f5f7;
-              text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-              text-align: left; }
-      body > main > section.swiper .swiper-pagination {
+              gap: 30px;
+              align-content: baseline;
+              align-items: baseline;
+              position: absolute;
+              bottom: 7%;
+              left: 5%; }
+              body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn {
+                width: 145px;
+                height: 43px;
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+                background-color: #fff;
+                color: #1d1d1f; }
+                body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn:hover {
+                  opacity: 0.8; }
+                body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn > p {
+                  display: inline-block;
+                  font-size: 14px;
+                  font-weight: 700; }
+                body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn i {
+                  font-size: 14px; }
+              body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > p {
+                max-width: 320px;
+                font-size: 18px;
+                color: #f5f5f7;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+                text-align: left; }
+              body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info strong {
+                color: #f5f5f7;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+                text-align: left; }
+      body > main > section.swiper > div.mySwiper .swiper-pagination {
         display: block;
         width: 100%;
-        height: 20px; } }
+        height: 20px; }
+      body > main > section.swiper > div.mySwiper .swiper-button-next,
+      body > main > section.swiper > div.mySwiper .swiper-button-prev {
+        visibility: hidden; }
+    body > main .size-s {
+      display: none; } }
 
 @media screen and (min-width: 768px) and (max-width: 991.9px) {
   body > main {
@@ -539,6 +635,10 @@
             height: inherit;
             object-fit: cover;
             object-position: center; }
+        body > main > section.products-1col > div.container > a.size-s {
+          position: absolute;
+          top: 0;
+          left: 0; }
         body > main > section.products-1col > div.container div.titles {
           display: flex;
           flex-flow: column nowrap;
@@ -618,6 +718,10 @@
             height: inherit;
             object-fit: cover;
             object-position: center; }
+        body > main > section.products-2col > div.container > a.size-s {
+          position: absolute;
+          top: 0;
+          left: 0; }
         body > main > section.products-2col > div.container div.titles {
           display: flex;
           flex-flow: column nowrap;
@@ -675,73 +779,84 @@
     body > main > section.swiper {
       width: 100%;
       height: auto; }
-      body > main > section.swiper .swiper-wrapper {
+      body > main > section.swiper > div.mySwiper > div.swiper-wrapper {
         width: 100%;
         height: auto;
         display: flex;
         flex-flow: row nowrap;
         gap: 0px; }
-      body > main > section.swiper .swiper-slide {
-        width: 80vw;
-        height: auto;
-        margin-bottom: 10px;
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        flex-flow: row nowrap;
-        gap: 0px;
-        justify-content: center;
-        align-items: flex-start; }
-        body > main > section.swiper .swiper-slide > a {
-          display: block;
-          width: 100%;
-          height: 100%; }
-          body > main > section.swiper .swiper-slide > a > img {
+        body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide {
+          width: 80vw;
+          height: auto;
+          margin-bottom: 10px;
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 0px;
+          justify-content: center;
+          align-items: flex-start; }
+          body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a {
             display: block;
             width: 100%;
-            height: 100%;
-            object-fit: contain; }
-          body > main > section.swiper .swiper-slide > a > div.info {
-            transform: translateY(0);
-            transition: all 0.6s;
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 30px;
-            align-content: baseline;
-            align-items: baseline;
-            position: absolute;
-            bottom: 7%;
-            left: 5%; }
-            body > main > section.swiper .swiper-slide > a > div.info > div.info-btn {
-              width: 145px;
-              height: 43px;
+            height: 100%; }
+            body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: contain; }
+            body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a img.size-s {
+              display: none; }
+            body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info {
+              width: 85%;
+              height: auto;
               display: flex;
               flex-flow: row nowrap;
-              gap: 5px;
-              justify-content: center;
-              align-items: center;
-              border-radius: 25px;
-              background-color: #fff;
-              color: #1d1d1f; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn:hover {
-                opacity: 0.8; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn > p {
-                display: inline-block;
-                font-size: 14px;
-                font-weight: 700; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn i {
-                font-size: 14px; }
-            body > main > section.swiper .swiper-slide > a > div.info > p {
-              max-width: 320px;
-              font-size: 18px;
-              color: #f5f5f7;
-              text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-              text-align: left; }
-      body > main > section.swiper .swiper-pagination {
+              gap: 30px;
+              align-content: baseline;
+              align-items: baseline;
+              position: absolute;
+              bottom: 7%;
+              left: 5%; }
+              body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn {
+                width: 145px;
+                height: 43px;
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+                background-color: #fff;
+                color: #1d1d1f; }
+                body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn:hover {
+                  opacity: 0.8; }
+                body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn > p {
+                  display: inline-block;
+                  font-size: 14px;
+                  font-weight: 700; }
+                body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn i {
+                  font-size: 14px; }
+              body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info > p {
+                max-width: 320px;
+                font-size: 18px;
+                color: #f5f5f7;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+                text-align: left; }
+              body > main > section.swiper > div.mySwiper > div.swiper-wrapper > div.swiper-slide > a > div.info strong {
+                color: #f5f5f7;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+                text-align: left; }
+      body > main > section.swiper > div.mySwiper .swiper-pagination {
         display: block;
         width: 100%;
-        height: 20px; } }
+        height: 20px; }
+      body > main > section.swiper > div.mySwiper .swiper-button-next,
+      body > main > section.swiper > div.mySwiper .swiper-button-prev {
+        visibility: hidden; }
+    body > main .size-s {
+      display: none; } }
 
 @media screen and (min-width: 576px) and (max-width: 767.9px) {
   body > main {
@@ -769,6 +884,10 @@
             height: inherit;
             object-fit: cover;
             object-position: center; }
+        body > main > section.products-1col > div.container > a.size-s {
+          position: absolute;
+          top: 0;
+          left: 0; }
         body > main > section.products-1col > div.container div.titles {
           display: flex;
           flex-flow: column nowrap;
@@ -780,13 +899,13 @@
           overflow: hidden;
           padding-top: 47px; }
           body > main > section.products-1col > div.container div.titles > h2 {
-            font-size: 50px;
+            font-size: 44px;
             color: #f5f5f7;
             text-align: center; }
             body > main > section.products-1col > div.container div.titles > h2 i {
               vertical-align: baseline; }
           body > main > section.products-1col > div.container div.titles > h3 {
-            font-size: 25px;
+            font-size: 22px;
             color: #f5f5f7;
             font-weight: lighter;
             text-align: center;
@@ -817,7 +936,7 @@
             body > main > section.products-1col > div.container div.titles > div.links > a {
               text-decoration: none;
               color: #2997ff;
-              font-size: 22.5px; }
+              font-size: 19.8px; }
               body > main > section.products-1col > div.container div.titles > div.links > a:hover {
                 text-decoration: underline; }
               body > main > section.products-1col > div.container div.titles > div.links > a::after {
@@ -848,6 +967,10 @@
             height: inherit;
             object-fit: cover;
             object-position: center; }
+        body > main > section.products-2col > div.container > a.size-s {
+          position: absolute;
+          top: 0;
+          left: 0; }
         body > main > section.products-2col > div.container div.titles {
           display: flex;
           flex-flow: column nowrap;
@@ -859,13 +982,13 @@
           overflow: hidden;
           padding-top: 47px; }
           body > main > section.products-2col > div.container div.titles > h2 {
-            font-size: 40px;
+            font-size: 30px;
             color: #f5f5f7;
             text-align: center; }
             body > main > section.products-2col > div.container div.titles > h2 i {
               vertical-align: baseline; }
           body > main > section.products-2col > div.container div.titles > h3 {
-            font-size: 20px;
+            font-size: 15px;
             color: #f5f5f7;
             font-weight: lighter;
             text-align: center;
@@ -896,284 +1019,215 @@
             body > main > section.products-2col > div.container div.titles > div.links > a {
               text-decoration: none;
               color: #2997ff;
-              font-size: 18px; }
+              font-size: 13.5px; }
               body > main > section.products-2col > div.container div.titles > div.links > a:hover {
                 text-decoration: underline; }
               body > main > section.products-2col > div.container div.titles > div.links > a::after {
                 content: "  \203A";
                 font-weight: 700; }
-    body > main > section.swiper {
+    body > main > section.size-regular {
+      display: none; }
+    body > main > section.swiper-s {
+      margin-bottom: 12px;
       width: 100%;
       height: auto; }
-      body > main > section.swiper .swiper-wrapper {
+      body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper {
         width: 100%;
         height: auto;
         display: flex;
         flex-flow: row nowrap;
         gap: 0px; }
-      body > main > section.swiper .swiper-slide {
-        width: 80vw;
-        height: auto;
-        margin-bottom: 10px;
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        flex-flow: row nowrap;
-        gap: 0px;
-        justify-content: center;
-        align-items: flex-start; }
-        body > main > section.swiper .swiper-slide > a {
-          display: block;
-          width: 100%;
-          height: 100%; }
-          body > main > section.swiper .swiper-slide > a > img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: contain; }
-          body > main > section.swiper .swiper-slide > a > div.info {
-            transform: translateY(0);
-            transition: all 0.6s;
+        body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide {
+          width: auto;
+          height: 500px;
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a {
             display: flex;
-            flex-flow: row nowrap;
-            gap: 30px;
-            align-content: baseline;
-            align-items: baseline;
-            position: absolute;
-            bottom: 7%;
-            left: 5%; }
-            body > main > section.swiper .swiper-slide > a > div.info > div.info-btn {
-              width: 145px;
-              height: 43px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: inherit;
+            height: inherit; }
+            body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > img {
+              width: 100%;
+              height: 500px;
+              object-fit: cover; }
+            body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info {
+              width: 90%;
+              height: auto;
               display: flex;
-              flex-flow: row nowrap;
+              flex-flow: column nowrap;
               gap: 5px;
-              justify-content: center;
+              align-content: center;
               align-items: center;
-              border-radius: 25px;
-              background-color: #fff;
-              color: #1d1d1f; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn:hover {
-                opacity: 0.8; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn > p {
-                display: inline-block;
-                font-size: 14px;
-                font-weight: 700; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn i {
-                font-size: 14px; }
-            body > main > section.swiper .swiper-slide > a > div.info > p {
-              max-width: 320px;
-              font-size: 18px;
-              color: #f5f5f7;
-              text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-              text-align: left; }
-      body > main > section.swiper .swiper-pagination {
-        display: block;
-        width: 100%;
-        height: 20px; } }
+              justify-content: center;
+              position: absolute;
+              bottom: 7%;
+              left: 5%; }
+              body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > p {
+                text-align: center !important; }
+              body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn {
+                width: 145px;
+                height: 43px;
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+                background-color: #fff;
+                color: #1d1d1f; }
+                body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn:hover {
+                  opacity: 0.8; }
+                body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn > p {
+                  display: inline-block;
+                  font-size: 14px;
+                  font-weight: 700; }
+                body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn i {
+                  font-size: 14px; }
+              body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > p {
+                max-width: 320px;
+                font-size: 18px;
+                color: #f5f5f7;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+                text-align: left; }
+              body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info strong {
+                color: #f5f5f7;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+                text-align: left; } }
 
 @media screen and (max-width: 575.9px) {
-  body > main {
+  body > main div.container {
     width: 100%;
-    height: auto; }
-    body > main > section.products-1col {
-      width: 100%;
-      height: 580px;
-      margin-bottom: 12px; }
-      body > main > section.products-1col > div.container {
+    height: 500px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0px;
+    justify-content: center; }
+    body > main div.container > a {
+      display: block;
+      width: inherit;
+      height: inherit; }
+      body > main div.container > a > img {
         width: inherit;
         height: inherit;
-        display: flex;
-        flex-flow: row nowrap;
-        gap: 0px;
-        justify-content: center;
-        position: relative;
-        cursor: pointer; }
-        body > main > section.products-1col > div.container > a {
-          width: inherit;
-          height: inherit;
-          display: block; }
-          body > main > section.products-1col > div.container > a > img {
-            width: inherit;
-            height: inherit;
-            object-fit: cover;
-            object-position: center; }
-        body > main > section.products-1col > div.container div.titles {
-          display: flex;
-          flex-flow: column nowrap;
-          gap: 10px;
-          align-content: center;
-          align-items: center;
-          position: absolute;
-          top: 0;
-          overflow: hidden;
-          padding-top: 47px; }
-          body > main > section.products-1col > div.container div.titles > h2 {
-            font-size: 50px;
-            color: #f5f5f7;
-            text-align: center; }
-            body > main > section.products-1col > div.container div.titles > h2 i {
-              vertical-align: baseline; }
-          body > main > section.products-1col > div.container div.titles > h3 {
-            font-size: 25px;
-            color: #f5f5f7;
-            font-weight: lighter;
-            text-align: center;
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 5px;
-            align-items: center; }
-            body > main > section.products-1col > div.container div.titles > h3 > sup {
-              position: relative;
-              vertical-align: baseline;
-              font-size: 12px;
-              bottom: -8px;
-              left: -5px; }
-          body > main > section.products-1col > div.container div.titles > p {
-            font-size: 17px;
-            color: #6e6e73; }
-          body > main > section.products-1col > div.container div.titles > span {
-            color: #ab1213;
-            font-weight: 600;
-            margin-top: -5px; }
-          body > main > section.products-1col > div.container div.titles > div.links {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 50px;
-            justify-content: center; }
-            body > main > section.products-1col > div.container div.titles > div.links > a {
-              text-decoration: none;
-              color: #2997ff;
-              font-size: 22.5px; }
-              body > main > section.products-1col > div.container div.titles > div.links > a:hover {
-                text-decoration: underline; }
-              body > main > section.products-1col > div.container div.titles > div.links > a::after {
-                content: "  \203A";
-                font-weight: 700; }
-    body > main > section.products-2col {
+        object-fit: cover;
+        object-position: center; }
+    body > main div.container > a.size-s {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    body > main div.container div.titles {
       display: flex;
-      flex-flow: row nowrap;
-      gap: 0px;
-      width: 100%;
-      height: 580px;
-      margin-bottom: 12px; }
-      body > main > section.products-2col > div.container {
-        width: inherit;
-        height: inherit;
+      flex-flow: column nowrap;
+      gap: 10px;
+      align-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+      padding-top: 47px; }
+      body > main div.container div.titles > h2 {
+        font-size: 40px;
+        color: #f5f5f7;
+        text-align: center; }
+        body > main div.container div.titles > h2 i {
+          vertical-align: baseline; }
+      body > main div.container div.titles > h3 {
+        font-size: 20px;
+        color: #f5f5f7;
+        font-weight: lighter;
+        text-align: center;
         display: flex;
         flex-flow: row nowrap;
-        gap: 0px;
-        justify-content: center;
-        position: relative;
-        cursor: pointer; }
-        body > main > section.products-2col > div.container > a {
-          width: inherit;
-          height: inherit;
-          display: block; }
-          body > main > section.products-2col > div.container > a > img {
-            width: inherit;
-            height: inherit;
-            object-fit: cover;
-            object-position: center; }
-        body > main > section.products-2col > div.container div.titles {
-          display: flex;
-          flex-flow: column nowrap;
-          gap: 10px;
-          align-content: center;
-          align-items: center;
-          position: absolute;
-          top: 0;
-          overflow: hidden;
-          padding-top: 47px; }
-          body > main > section.products-2col > div.container div.titles > h2 {
-            font-size: 40px;
-            color: #f5f5f7;
-            text-align: center; }
-            body > main > section.products-2col > div.container div.titles > h2 i {
-              vertical-align: baseline; }
-          body > main > section.products-2col > div.container div.titles > h3 {
-            font-size: 20px;
-            color: #f5f5f7;
-            font-weight: lighter;
-            text-align: center;
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 5px;
-            align-items: center; }
-            body > main > section.products-2col > div.container div.titles > h3 > sup {
-              position: relative;
-              vertical-align: baseline;
-              font-size: 12px;
-              bottom: -8px;
-              left: -5px; }
-          body > main > section.products-2col > div.container div.titles > p {
-            font-size: 17px;
-            color: #6e6e73; }
-          body > main > section.products-2col > div.container div.titles > span {
-            color: #ab1213;
-            font-weight: 600;
-            margin-top: -5px; }
-          body > main > section.products-2col > div.container div.titles > div.links {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 50px;
-            justify-content: center; }
-            body > main > section.products-2col > div.container div.titles > div.links > a {
-              text-decoration: none;
-              color: #2997ff;
-              font-size: 18px; }
-              body > main > section.products-2col > div.container div.titles > div.links > a:hover {
-                text-decoration: underline; }
-              body > main > section.products-2col > div.container div.titles > div.links > a::after {
-                content: "  \203A";
-                font-weight: 700; }
-    body > main > section.swiper {
-      width: 100%;
-      height: auto; }
-      body > main > section.swiper .swiper-wrapper {
+        gap: 5px;
+        align-items: center; }
+        body > main div.container div.titles > h3 > sup {
+          position: relative;
+          vertical-align: baseline;
+          font-size: 12px;
+          bottom: -8px;
+          left: -5px; }
+      body > main div.container div.titles > p {
+        font-size: 17px;
+        color: #6e6e73; }
+      body > main div.container div.titles > span {
+        color: #ab1213;
+        font-weight: 600;
+        margin-top: -5px; }
+      body > main div.container div.titles > div.links {
         width: 100%;
         height: auto;
         display: flex;
         flex-flow: row nowrap;
-        gap: 0px; }
-      body > main > section.swiper .swiper-slide {
-        width: 80vw;
-        height: auto;
-        margin-bottom: 10px;
+        gap: 50px;
+        justify-content: center; }
+        body > main div.container div.titles > div.links > a {
+          text-decoration: none;
+          color: #2997ff;
+          font-size: 16.2px; }
+          body > main div.container div.titles > div.links > a:hover {
+            text-decoration: underline; }
+          body > main div.container div.titles > div.links > a::after {
+            content: "  \203A";
+            font-weight: 700; }
+    body > main div.container .Products-titlebottom {
+      top: 290px !important; }
+  body > main > section.size-regular {
+    display: none; }
+  body > main > section.swiper-s {
+    margin-bottom: 12px;
+    width: 100%;
+    height: auto; }
+    body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 0px; }
+      body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide {
+        width: auto;
+        height: 500px;
         text-align: center;
         font-size: 18px;
         background: #fff;
         display: flex;
-        flex-flow: row nowrap;
-        gap: 0px;
         justify-content: center;
-        align-items: flex-start; }
-        body > main > section.swiper .swiper-slide > a {
-          display: block;
-          width: 100%;
-          height: 100%; }
-          body > main > section.swiper .swiper-slide > a > img {
-            display: block;
+        align-items: center; }
+        body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: inherit;
+          height: inherit; }
+          body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > img {
             width: 100%;
-            height: 100%;
-            object-fit: contain; }
-          body > main > section.swiper .swiper-slide > a > div.info {
-            transform: translateY(0);
-            transition: all 0.6s;
+            height: 500px;
+            object-fit: cover; }
+          body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info {
+            width: 90%;
+            height: auto;
             display: flex;
-            flex-flow: row nowrap;
-            gap: 30px;
-            align-content: baseline;
-            align-items: baseline;
+            flex-flow: column nowrap;
+            gap: 5px;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
             position: absolute;
             bottom: 7%;
             left: 5%; }
-            body > main > section.swiper .swiper-slide > a > div.info > div.info-btn {
+            body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > p {
+              text-align: center !important; }
+            body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn {
               width: 145px;
               height: 43px;
               display: flex;
@@ -1184,24 +1238,24 @@
               border-radius: 25px;
               background-color: #fff;
               color: #1d1d1f; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn:hover {
+              body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn:hover {
                 opacity: 0.8; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn > p {
+              body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn > p {
                 display: inline-block;
                 font-size: 14px;
                 font-weight: 700; }
-              body > main > section.swiper .swiper-slide > a > div.info > div.info-btn i {
+              body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > div.info-btn i {
                 font-size: 14px; }
-            body > main > section.swiper .swiper-slide > a > div.info > p {
+            body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info > p {
               max-width: 320px;
               font-size: 18px;
               color: #f5f5f7;
               text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
               text-align: left; }
-      body > main > section.swiper .swiper-pagination {
-        display: block;
-        width: 100%;
-        height: 20px; } }
+            body > main > section.swiper-s > div.mySwiper-s > div.swiper-wrapper > div.swiper-slide > a > div.info strong {
+              color: #f5f5f7;
+              text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+              text-align: left; } }
 
 @media screen and (min-width: 1200px) {
   body > div.black-bg {
@@ -1614,7 +1668,6 @@
   body > header {
     width: 100%;
     height: 44px;
-    background-color: #161617;
     position: sticky;
     top: 0;
     left: 0;
@@ -1764,7 +1817,6 @@
   body > header {
     width: 100%;
     height: 44px;
-    background-color: #161617;
     position: sticky;
     top: 0;
     left: 0;
@@ -2000,7 +2052,6 @@
           padding-bottom: 8px;
           padding-right: 0;
           padding-left: 0;
-          border-bottom: solid 0.8px #d2d2d7;
           font-size: 12px;
           color: #6e6e73; }
           body > footer > div.footer-container > section.copyright > div.shop-ways > a {
@@ -2011,7 +2062,8 @@
           display: flex;
           flex-flow: row wrap;
           gap: 0;
-          justify-content: space-between; }
+          justify-content: space-between;
+          border-top: solid 0.8px #d2d2d7; }
           body > footer > div.footer-container > section.copyright > div.rights-container > div.rights {
             padding-top: 5px;
             padding-bottom: 0;
@@ -2174,7 +2226,6 @@
           padding-bottom: 8px;
           padding-right: 0;
           padding-left: 0;
-          border-bottom: solid 0.8px #d2d2d7;
           font-size: 12px;
           color: #6e6e73; }
           body > footer > div.footer-container > section.copyright > div.shop-ways > a {
@@ -2185,7 +2236,8 @@
           display: flex;
           flex-flow: row wrap;
           gap: 0;
-          justify-content: space-between; }
+          justify-content: space-between;
+          border-top: solid 0.8px #d2d2d7; }
           body > footer > div.footer-container > section.copyright > div.rights-container > div.rights {
             padding-top: 5px;
             padding-bottom: 0;
@@ -2348,7 +2400,6 @@
           padding-bottom: 8px;
           padding-right: 0;
           padding-left: 0;
-          border-bottom: solid 0.8px #d2d2d7;
           font-size: 12px;
           color: #6e6e73; }
           body > footer > div.footer-container > section.copyright > div.shop-ways > a {
@@ -2359,7 +2410,8 @@
           display: flex;
           flex-flow: row wrap;
           gap: 0;
-          justify-content: space-between; }
+          justify-content: space-between;
+          border-top: solid 0.8px #d2d2d7; }
           body > footer > div.footer-container > section.copyright > div.rights-container > div.rights {
             padding-top: 5px;
             padding-bottom: 0;

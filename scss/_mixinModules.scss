@@ -82,7 +82,6 @@
       display: none;
     }
     @include dimension(100%, 44px);
-    background-color: $nav-hbgcolor;
     @include nav-position;
     @include nav-hover;
     > nav {
@@ -189,6 +188,11 @@
         object-position: center;
       }
     }
+    > a.size-s {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
     div.titles {
       @include product-titles($font);
       > span {
@@ -202,37 +206,146 @@
     }
   }
 }
-
+@mixin productsSectionModule-xs {
+  div.container {
+    @include dimension(100%, 500px);
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    @include flex-row;
+    justify-content: center;
+    > a {
+      display: block;
+      @include dimension(inherit, inherit);
+      > img {
+        @include dimension(inherit, inherit);
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    > a.size-s {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    div.titles {
+      @include product-titles(20px);
+      > span {
+        color: #ab1213;
+        font-weight: 600;
+        margin-top: -5px;
+      }
+      > div.links {
+        @include product-links(18px);
+      }
+    }
+    .Products-titlebottom {
+      top: 290px !important;
+    }
+  }
+}
 // swiper module
 @mixin swiperModule {
   @include dimension(100%, auto);
-  .swiper-wrapper {
-    @include dimension(100%, auto);
-    @include flex-row;
-  }
-  .swiper-slide {
-    @include dimension(80vw, auto);
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    @include flex-row;
-    justify-content: center;
-    align-items: flex-start;
-    > a {
-      display: block;
-      @include dimension(100%, 100%);
-      > img {
-        display: block;
-        @include dimension(100%, 100%);
-        object-fit: contain;
+  > div.mySwiper {
+    > div.swiper-wrapper {
+      @include dimension(100%, auto);
+      @include flex-row;
+
+      > div.swiper-slide {
+        @include dimension(80vw, auto);
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        @include flex-row;
+        justify-content: center;
+        align-items: flex-start;
+        > a {
+          display: block;
+          @include dimension(100%, 100%);
+          > img {
+            display: block;
+            @include dimension(100%, 100%);
+            object-fit: contain;
+          }
+          img.size-s {
+            display: none;
+          }
+          > div.info {
+            @include dimension(85%, auto);
+            @include flex-row(30px);
+            align-content: baseline;
+            align-items: baseline;
+            position: absolute;
+            bottom: 7%;
+            left: 5%;
+            @include swiper-info-btn;
+            @include swiper-info-text;
+          }
+        }
       }
-      @include product-info;
+    }
+    .swiper-pagination {
+      display: block;
+      @include dimension(100%, 20px);
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      visibility: hidden;
     }
   }
-  .swiper-pagination {
-    display: block;
-    @include dimension(100%, 20px);
+}
+
+@mixin swiperModule-s-xs {
+  > section.size-regular {
+    display: none;
+  }
+  > section.swiper-s {
+    margin-bottom: 12px;
+    @include dimension(100%, auto);
+    > div.mySwiper-s {
+      > div.swiper-wrapper {
+        @include dimension(100%, auto);
+        @include flex-row;
+        > div.swiper-slide {
+          @include dimension(auto, 500px);
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            @include dimension(inherit, inherit);
+            > img {
+              // display: block;
+              @include dimension(100%, 500px);
+              object-fit: cover;
+            }
+            > div.info {
+              @include dimension(90%, auto);
+              @include flex-col(5px);
+              align-content: center;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              bottom: 7%;
+              left: 5%;
+              > p {
+                text-align: center !important;
+              }
+              @include swiper-info-btn;
+              @include swiper-info-text;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -277,7 +390,6 @@
       > div.shop-ways {
         @include margin(0, 0, 7px);
         @include padding(0, 0, 8px);
-        @include border-bottom;
         font-size: 12px;
         color: $footer-fontcolor;
         > a {
@@ -289,6 +401,7 @@
         width: 100%;
         @include flex-row(0, wrap);
         justify-content: space-between;
+        @include border-top;
         > div.rights {
           // @include border-top;
           @include padding(5px);

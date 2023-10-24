@@ -12,6 +12,7 @@ body {
       > section.swiper {
         @include swiperModule;
       }
+      @include hide-small-size;
     }
     @include lg {
       @include dimension(100%, auto);
@@ -25,6 +26,7 @@ body {
       > section.swiper {
         @include swiperModule;
       }
+      @include hide-small-size;
     }
 
     @include md {
@@ -39,34 +41,24 @@ body {
       > section.swiper {
         @include swiperModule;
       }
+      @include hide-small-size;
     }
 
     @include sm {
       @include dimension(100%, auto);
       > section.products-1col {
-        @include productsSectionModule;
+        @include productsSectionModule(22px);
       }
       > section.products-2col {
         @include flex-row;
-        @include productsSectionModule(20px);
+        @include productsSectionModule(15px);
       }
-      > section.swiper {
-        @include swiperModule;
-      }
+      @include swiperModule-s-xs;
     }
 
     @include xs {
-      @include dimension(100%, auto);
-      > section.products-1col {
-        @include productsSectionModule;
-      }
-      > section.products-2col {
-        @include flex-row;
-        @include productsSectionModule(20px);
-      }
-      > section.swiper {
-        @include swiperModule;
-      }
+      @include productsSectionModule-xs;
+      @include swiperModule-s-xs;
     }
   }
 }
