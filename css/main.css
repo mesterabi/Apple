@@ -2756,7 +2756,7 @@
               content: "United States";
               color: #424245;
               font-size: 12px;
-              padding-bottom: 10px; }
+              padding-top: 10px; }
             body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > p {
               display: inline-block;
               margin-top: 5px;
@@ -2782,7 +2782,8 @@
                   color: #424245;
                   font-size: 12px;
                   text-decoration: none;
-                  line-height: 1.5; }
+                  line-height: 1.5;
+                  font-size: 12px; }
                   body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a:hover {
                     text-decoration: underline; }
                 body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {
@@ -2939,7 +2940,7 @@
               content: "United States";
               color: #424245;
               font-size: 12px;
-              padding-bottom: 10px; }
+              padding-top: 10px; }
             body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > p {
               display: inline-block;
               margin-top: 5px;
@@ -2965,7 +2966,8 @@
                   color: #424245;
                   font-size: 12px;
                   text-decoration: none;
-                  line-height: 1.5; }
+                  line-height: 1.5;
+                  font-size: 10px; }
                   body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a:hover {
                     text-decoration: underline; }
                 body > footer > div.footer-container > section.copyright > div.rights-container > div.rights > ul > li > a {

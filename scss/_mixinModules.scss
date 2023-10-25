@@ -471,7 +471,7 @@
   }
 }
 
-@mixin smallsizefooterModule {
+@mixin smallsizefooterModule($rights-font: 12px) {
   .size-regular {
     display: none;
   }
@@ -556,7 +556,7 @@
             content: "United States";
             color: $footer-linkcolor;
             font-size: 12px;
-            padding-bottom: 10px;
+            padding-top: 10px;
           }
           // @include border-top;
           width: 100%;
@@ -579,6 +579,7 @@
             > li {
               > a {
                 @include footer-linkformat;
+                font-size: $rights-font;
               }
               @include margin(5px, 7px);
               > a {

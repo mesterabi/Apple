@@ -11,10 +11,9 @@ body {
     }
     @include sm {
       @include smallsizefooterModule;
-
     }
     @include xs {
-      @include smallsizefooterModule;
+      @include smallsizefooterModule(10px);
     }
   }
 }
