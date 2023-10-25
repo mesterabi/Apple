@@ -247,6 +247,7 @@
 // swiper module
 @mixin swiperModule {
   @include dimension(100%, auto);
+  margin-bottom: 12px;
   > div.mySwiper {
     > div.swiper-wrapper {
       @include dimension(100%, auto);
@@ -286,18 +287,26 @@
         }
       }
     }
-    .swiper-pagination {
-      display: block;
-      @include dimension(100%, 20px);
+    @include swiper-pagination;
+    .swiper-slide-prev,
+    .swiper-slide-next {
+      opacity: 0.5;
     }
-    .swiper-button-next,
-    .swiper-button-prev {
-      visibility: hidden;
+    .swiper-slide-prev,
+    .swiper-slide-next {
+      div.info {
+        visibility: hidden;
+      }
     }
   }
 }
 
-@mixin swiperModule-s-xs {
+@mixin swiperModule-s-xs(
+  $btn-width: 145px,
+  $btn-height: 43px,
+  $btn-font: 14px,
+  $text-font: 18px
+) {
   > section.size-regular {
     display: none;
   }
@@ -309,9 +318,10 @@
         @include dimension(100%, auto);
         @include flex-row;
         > div.swiper-slide {
-          @include dimension(auto, 500px);
+          position: relative;
+          @include dimension(auto, auto);
           text-align: center;
-          font-size: 18px;
+          font-size: $text-font;
           background: #fff;
           display: flex;
           justify-content: center;
@@ -324,12 +334,12 @@
             @include dimension(inherit, inherit);
             > img {
               // display: block;
-              @include dimension(100%, 500px);
-              object-fit: cover;
+              @include dimension(100%, auto);
+              object-fit: contain;
             }
-            > div.info {
+            div.info {
               @include dimension(90%, auto);
-              @include flex-col(5px);
+              @include flex-col(7px);
               align-content: center;
               align-items: center;
               justify-content: center;
@@ -339,12 +349,34 @@
               > p {
                 text-align: center !important;
               }
-              @include swiper-info-btn;
-              @include swiper-info-text;
+              @include swiper-info-btn($btn-width, $btn-height, $btn-font);
+              @include swiper-info-text($text-font);
             }
           }
         }
       }
+    }
+    @include swiper-pagination;
+  }
+  .swiper-slide-active {
+    div.shadow {
+      // transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+      display: block;
+      position: absolute;
+      @include dimension(100%, 100%);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7596288515406162) 0%,
+        rgba(255, 255, 255, 0) 60%
+      );
+      z-index: 1000;
+    }
+  }
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    opacity: 0.5;
+    div.shadow {
+      display: none;
     }
   }
 }
@@ -364,7 +396,7 @@
         @include padding(20px);
         @include dimension(20%, 100%);
         > div.directory {
-          > h3 {
+          h3 {
             color: $footer-dirtitlecolor;
             font-size: 12px;
             @include margin(0, 0, 10px);
@@ -403,7 +435,6 @@
         justify-content: space-between;
         @include border-top;
         > div.rights {
-          // @include border-top;
           @include padding(5px);
           @include flex-row(0, wrap);
           align-items: baseline;
@@ -414,6 +445,7 @@
             display: inline-block;
             @include margin(5px, 30px);
             font-size: 12px;
+            white-space: nowrap;
             color: $footer-fontcolor;
           }
           > ul {
@@ -432,16 +464,12 @@
               }
             }
           }
-        }
-        > div.location {
-          > a {
-            @include footer-linkformat;
+          &::after {
+            content: "United States";
+            color: $footer-linkcolor;
+            font-size: 12px;
+            padding-bottom: 10px;
           }
-          @include padding(7px);
-          float: right;
-          z-index: 2;
-          white-space: nowrap;
-          text-align: right;
         }
       }
     }
@@ -449,6 +477,9 @@
 }
 
 @mixin smallsizefooterModule {
+  .size-regular {
+    display: none;
+  }
   background-color: $footer-bgcolor;
   @include flex-row;
   justify-content: center;
@@ -463,19 +494,46 @@
       @include flex-col;
       > section.directory-col {
         > div.directory {
-          padding: 0;
-          @include dimension(100%, 37px);
-          @include border-bottom;
-          overflow: hidden;
-          h3,
-          a,
-          i {
-            @include footer-textformat;
-            line-height: 37px;
+          margin-top: 0;
+          > button.collapsible {
+            background-color: $footer-bgcolor !important;
+            padding: 0;
+            border: none;
+            @include dimension(100%, auto);
+            @include border-bottom;
+            overflow: hidden;
+            h3,
+            a,
+            i {
+              @include footer-textformat;
+              line-height: 37px;
+            }
+            > h3 {
+              @include flex-row;
+              justify-content: space-between;
+            }
           }
-          > h3 {
-            @include flex-row;
-            justify-content: space-between;
+          > ul.collapse-content {
+            display: none;
+            overflow: hidden;
+            list-style: none;
+            > li {
+              white-space: nowrap;
+              padding: 3px;
+              padding-left: 15px;
+              > a {
+                @include footer-linkformat;
+              }
+              @include margin(5px, 7px);
+              > a {
+                @include padding(0, 10px);
+              }
+            }
+            li:nth-last-child(1) {
+              @include border-bottom;
+              width: 100vw;
+              padding-bottom: 10px;
+            }
           }
         }
       }

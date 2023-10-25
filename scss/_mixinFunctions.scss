@@ -226,9 +226,9 @@
 }
 
 // swiper functions
-@mixin swiper-info-btn {
+@mixin swiper-info-btn($btn-width: 145px, $btn-height: 43px, $btn-font: 14px) {
   > div.info-btn {
-    @include dimension(145px, 43px);
+    @include dimension($btn-width, $btn-height);
     @include flex-row(5px);
     justify-content: center;
     align-items: center;
@@ -240,18 +240,18 @@
     }
     > p {
       display: inline-block;
-      font-size: 14px;
+      font-size: $btn-font;
       font-weight: 700;
     }
     i {
-      font-size: 14px;
+      font-size: $btn-font;
     }
   }
 }
-@mixin swiper-info-text {
+@mixin swiper-info-text($text-font: 18px) {
   > p {
     max-width: 320px;
-    font-size: 18px;
+    font-size: $text-font;
     color: $fontcolor-light;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
     text-align: left;
@@ -260,6 +260,47 @@
     color: $fontcolor-light;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
     text-align: left;
+    font-size: #{$text-font + 3};
+  }
+}
+
+@mixin swiper-pagination {
+  .swiper-pagination {
+    @include flex-row;
+    position: static;
+    @include margin(12px, 0, 5px);
+    justify-content: center;
+    align-items: center;
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+      background: $swiper-bullet;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $swiper-bullet-active;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    // @include dimension(5px, 5px);
+    padding: 0 50px;
+    color: black;
+    font-weight: 700 !important;
+    font-size: 2px !important ;
+  }
+  .swiper-button-prev {
+    &::after {
+      content: "\2039";
+      font-size: 60px;  
+    }
+  }
+  .swiper-button-next {
+    &::after {
+      content: "\203A";
+      font-size: 60px;
+    }
   }
 }
 

@@ -58,7 +58,7 @@ body {
 
     @include xs {
       @include productsSectionModule-xs;
-      @include swiperModule-s-xs;
+      @include swiperModule-s-xs(105px, 40px, 12px, 16px);
     }
   }
 }

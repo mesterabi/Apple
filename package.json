@@ -6,6 +6,7 @@
   "scripts": {
     "live": "live-server",
     "scss": "node-sass -w ./scss/ -o ./css/ -r",
+    "scss-comp": "node-sass -w ./scss/ -o ./css/ -r --output-style compressed",
     "start": "npm-run-all --parallel live scss"
   },
   "repository": {
