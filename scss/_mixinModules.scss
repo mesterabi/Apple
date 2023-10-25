@@ -431,30 +431,24 @@
       }
       > div.rights-container {
         width: 100%;
-        @include flex-row(0, wrap);
-        justify-content: space-between;
         @include border-top;
         > div.rights {
+          width: 100%;
           @include padding(5px);
-          @include flex-row(0, wrap);
-          align-items: baseline;
-          position: relative;
-          top: -3px;
-          z-index: 1;
           > p {
             display: inline-block;
             @include margin(5px, 30px);
             font-size: 12px;
-            white-space: nowrap;
             color: $footer-fontcolor;
+            white-space: nowrap;
           }
           > ul {
-            @include flex-row;
-            @include dimension(100%, 24px);
-            list-style: none;
+            display: inline-block;
             > li {
               white-space: nowrap;
+              display: inline-block;
               > a {
+                display: inline-block;
                 @include footer-linkformat;
               }
               @include margin(5px, 7px);
@@ -464,12 +458,13 @@
               }
             }
           }
-          &::after {
-            content: "United States";
-            color: $footer-linkcolor;
-            font-size: 12px;
-            padding-bottom: 10px;
-          }
+        }
+        > div.location {
+          @include footer-linkformat;
+          float: right;
+          margin-top: 10px;
+          z-index: 2;
+          white-space: nowrap;
         }
       }
     }
